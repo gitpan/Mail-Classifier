@@ -3,6 +3,25 @@ Changes to Mail::Classifier
 ========================================
 Revision history for Perl extension Mail::Classifier.
 
+0.12	Tue Feb 24 15:57:21 EST 2004
+
+	-	tag() now tags with reserved category "UNKNOWN" if no category
+		meets the probability threshold.  This guarantees that all messages
+		passed to tag() will receive a header
+
+	-	parse() augmented with a separate tokenize() function
+		parse() now tags 'to', 'from', 'subject', and 'mailer' tokens
+		with context
+
+	-	tokenize() extracts href/src/mailto host/addresses, strips
+		all html tags, decodes html entities, and does much smarter
+		handling of punctuation for words with punctuation 
+		embedded within.  Also strips ">>>" forwarding symbols.
+	
+	-	prediction now uses Robinson-Fisher inverse chi squared to combine
+		individual word predictors
+		
+
 0.11	Tue Apr 22 06:52:27 EDT 2003
 
 	-	deprecated setparse() and replaced $self->{parsefcn} crud

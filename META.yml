@@ -1,0 +1,22 @@
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         Mail-Classifier
+version:      0.12
+version_from: Classifier.pm
+installdirs:  site
+requires:
+    File::Copy:                    0
+    File::Spec:                    0
+    File::Temp:                    0
+    HTML::Entities:                1.27
+    HTML::Strip:                   1.01
+    Mail::Address:                 0
+    Mail::Box:                     0
+    Mail::Box::Manager:            0
+    MLDBM:                         0
+    MLDBM::Sync:                   0
+    Statistics::Distributions:     1.02
+    Storable:                      0
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.17

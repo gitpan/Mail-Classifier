@@ -15,7 +15,7 @@ use File::Temp;
 use File::Spec;
 use Storable qw(lock_nstore lock_retrieve);
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 ### Initial Documentation ###
 
@@ -45,10 +45,6 @@ Mail::Classifier - Perl extension for probabilistic mail classification
 In practice, Mail::Classifier is just a stub that must be overridden in a 
 subclass, but the general interface is documented here.  See a subclass for 
 implementation-specific options or extensions.
-
-=head1 ABSTRACT
-
-Mail::Classifier - Perl extension for probabilistic mail classification
 
 =head1 DESCRIPTION
 
@@ -272,6 +268,10 @@ sub score {
     return ('NONE',1);
 }
 
+=pod
+
+=back
+
 =head1 METHODS THAT (PROBABLY) DON'T NEED EXTENSION IN COMMON SUBCLASSES
 
     * train/retrain
@@ -289,6 +289,8 @@ sub score {
 These functions are part of the "standard" interface to Mail::Classifier.  In a 
 properly written subclass, these functions will perform as expected with hopefully
 no modifications.
+
+=over
 
 =item I<train>  CORPUS-LIST
 
@@ -338,7 +340,7 @@ sub retrain {
 Takes a a probability threshold, plus a hash reference to
 categories and training corpi filenames.  To be counted a message as being scored into a category, the highest 
 probability category returned from I<score> must exceed the threshold or else the message 
-is scored as the reserved category 'UNK' for unknown.
+is scored as the reserved category 'UNKNOWN' for unknown.
 
 I<classify> does B<not> destroy prior training -- it merely creates a
 classification matrix for a given set of data using the existing 
@@ -365,8 +367,8 @@ sub classify {
     # prep mailboxes and prep the results array
     my %temp;
     foreach my $cat (values %{$opts->{corpus_list}}) {
-    	confess("Can't accept reserved category 'UNK'.") 
-        	if $cat eq "UNK";
+    	confess("Can't accept reserved category 'UNKNOWN'.") 
+        	if $cat eq "UNKNOWN";
         $temp{$cat}=1;
     }
     while ( my ($file, $cat) = each %{$opts->{corpus_list}} ) {    
@@ -377,7 +379,7 @@ sub classify {
             printf "%d messages in mailbox %s\n", $msg_count, $file;
         }
         $mresults{$cat} = {};
-        $mresults{$cat}{UNK} = 0;
+        $mresults{$cat}{UNKNOWN} = 0;
         foreach my $key ( keys %temp ) {
             $mresults{$cat}{$key} = 0;
         }
@@ -392,7 +394,7 @@ sub classify {
 			if ( $p >= $opts->{threshold}) {
 				$mresults{$cat}{$rv} += 1;
 			} else {
-				$mresults{$cat}{UNK} += 1;
+				$mresults{$cat}{UNKNOWN} += 1;
 			}
 			printf("\tResult: %s,%.2f\n", $rv, $p) if ($self->{options}{debug} >= 5);
 		}
@@ -413,7 +415,7 @@ Takes a integer number of folds, a probability threshold, plus a hash reference 
 categories and training corpi filenames.  Return a classification table built with N-fold
 cross validation.  To be count a message as being scored into a category, the highest 
 probability category returned from I<score> must exceed the threshold or else the message 
-is scored as the reserved category 'UNK' for unknown.
+is scored as the reserved category 'UNKNOWN' for unknown.
 
 I<crossval> destroys prior training -- users should consider cloning and then cross-validating if 
 they do not want to lose prior training.  Because of this, cross-validation
@@ -446,8 +448,8 @@ sub crossval {
     # and prep the results array
     my %temp;
     foreach my $cat (values %{$opts->{corpus_list}}) {
-    	confess("Can't accept reserved category 'UNK'.") 
-        	if $cat eq "UNK";
+    	confess("Can't accept reserved category 'UNKNOWN'.") 
+        	if $cat eq "UNKNOWN";
         $temp{$cat}=1;
     }
     while ( my ($file, $cat) = each %{$opts->{corpus_list}} ) {    
@@ -461,7 +463,7 @@ sub crossval {
             $mtags{$msg} = int(rand($opts->{folds}));
         }
         $mresults{$cat} = {};
-        $mresults{$cat}{UNK} = 0;
+        $mresults{$cat}{UNKNOWN} = 0;
         foreach my $key ( keys %temp ) {
             $mresults{$cat}{$key} = 0;
         }
@@ -493,7 +495,7 @@ sub crossval {
                 if ( $p >= $opts->{threshold}) {
                     $mresults{$cat}{$rv} += 1;
                 } else {
-                    $mresults{$cat}{UNK} += 1;
+                    $mresults{$cat}{UNKNOWN} += 1;
                 }
                 printf("\tResult: %s,%.2f\n", $rv, $p) if ($self->{options}{debug} >= 5);
             }
@@ -507,11 +509,12 @@ sub crossval {
 
 I<tagmsg> takes a Mail::Message object and adds a header with all categories with likelihood 
 over a threshold, returns a new Mail::Message object.  Any previous headers of 
-that type are deleted prior to the tagging.
+that type are deleted prior to the tagging. If verbose, append details of scoring.
 
     $bb->tagmsg(   {    'msg' => $msg,
                         'threshold' =>  .9,
-                        'header' => 'X-Mail-Classifier' } );
+                        'header' => 'X-Mail-Classifier',
+						'verbose' => 0 } );
 
 =item I<tagmbox> OPTIONS
     
@@ -519,22 +522,36 @@ I<tagmbox> is like I<tagmsg>, but tags an entire mailbox given by FILENAME.
 
     $bb->tagmbox(   {   'mailbox' => '/home/fred/mbox',
                         'threshold' =>  .9,
-                        'header' => 'X-Mail-Classifier' } );
+                        'header' => 'X-Mail-Classifier',
+						'verbose' => 0 } );
 
 =cut     
 
-sub tagmsg { 
+sub tagmsg { 	
     my ($self, $args) = @_;
+	my $details = [];
     confess "Bad arguments to tagmsg()"
         unless ($args->{msg} and $args->{threshold} and $args->{header});
     $args->{msg}->head->delete($args->{header});
-    my %probs = $self->score($args->{msg});
+    my %probs = $self->score($args->{msg}, $details);
+	my $tagged = 0;
     foreach my $key ( keys %probs ) {
         if ( $probs{$key} >= $args->{threshold} ) {
-            $args->{msg}->head->add("$args->{header}: $key");
+			my $p = sprintf("%.2f",$probs{$key});
+            $args->{msg}->head->add("$args->{header}: $key ($p)");
+			$tagged = 1;
         }
     }
-
+	$args->{msg}->head->add("$args->{header}: UNKNOWN") unless $tagged;
+	if ( defined($args->{verbose}) and $args->{verbose} ) {
+    	$args->{msg}->head->delete($args->{header} . "-Details");
+		my $dstring;
+		for my $note ( @{$details} ) {
+			$dstring .= ", " if $dstring;
+			$dstring .= $note;
+		}
+        $args->{msg}->head->add("$args->{header}-Details: $dstring");
+	}	
 }
 
 sub tagmbox {
@@ -661,6 +678,10 @@ sub debug {
     return $self->{options}{debug};
 }
                 
+=pod
+
+=back
+
 =head1 INTERNAL METHODS
 
 These methods should not be called by the end-user, but are listed as a
@@ -671,6 +692,8 @@ reference for developers subclassing this file.
     * _clone
     * Lock/ReadLock/Unlock/LockAll/UnLockAll
     * DESTROY
+
+=over
 
 =item I<_add_data_table> HASHNAME [STORE-ON-DISK-FLAG]
 

@@ -1,7 +1,15 @@
 =============================
 TODO    Mail::Classifier
-VERSION 0.11
 =============================
+
+High Priority
+
+*	Make sure documentation matches Changes
+
+*	Add ability to provide a list of tokens to ignore (e.g. "font" "FONT")
+
+*	Make sure reserved category "UNKNOWN" is tested for and rejected
+	wherever a category argument is taken
 
 CPAN/Module Maintenance
 
@@ -11,21 +19,29 @@ CPAN/Module Maintenance
 
 Functionality Enhancements
 
+*	Create a new module that inherits from GrahamSpam but implements
+	the Robinson-Fisher enhancements (M::C::RobFish)
+
 *   Allow learn/score to take \@array and construct a Mail::Message on
     the fly
 
+
 Optimization/Efficiency
-
-*   Test speed problems in parse()
-
-*   Benchmark speed with no disk cache vs disk cache just for word_count as
-    a default setting for GrahamSpam
 
 *   Experiment with alternative storage mechanisms and formats (array of arrays),
     separate files/tables for each category, etc. in GrahamSpam
 
 *	More experimentally: consider re-writing to use plug-in classes for different types of
 	data storage, allowing transparent replacement of memory/flat file/DB storage options.
+	Particuarly, consider rewriting to use DBD::SQLite or Class::DBI:SQLite
+
+*	Save date of last count to allow dropping of single count entries after X amount
+    of time (i.e. purging random gibberish attempts)
+
+*   Test speed problems in parse()
+
+*   Benchmark speed with no disk cache vs disk cache just for word_count as
+    a default setting for GrahamSpam
 
 Utility
 
@@ -34,14 +50,9 @@ Utility
 
 Algorithm Tuning/Benchmarking
 
-*   Test Graham's default cut-offs and biases vs alternatives
-
-*   Test alternative significance cut-offs
-
-*   Test results of higher threshold for n_observations_required (increased
-    confidence, reduced size of word_score, but slower to flag new spams...)
-
-*	Test Robinson's (?) enhancements to Graham's algorithm
-
+*	pick out hostnames and handle specially -- put separate tokens for full host
+	and then stripping off the host and then subdomain, e.g. www.cnn.com has
+	that, then .cnn.com then .com.  That would help flag things from .ru, etc.
+	
 *	Test bi-grams versus uni-gram tokens.
 

@@ -15,12 +15,14 @@ use Mail::Box::Manager;
 use Mail::Address;
 use File::Temp;
 use File::Spec;
-
+use HTML::Strip;
+use HTML::Entities;
+use Statistics::Distributions;
 use Mail::Classifier;
 
 our @ISA = qw( Mail::Classifier );
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 ### Initial Documentation ###
 
@@ -98,17 +100,19 @@ OPTIONS (with default) include:
                                     # scratch db-files, but with poor
                                     # performance 
     
-    n_observations_required => 5,   # Ignore words with a count less than this
+    n_observations_required => 1,   # Ignore words with a count less than this
     
-    number_of_predictors => 15,     # Score using this number of words
+    number_of_predictors => 41,     # Score using this number of words
     
     minimum_word_prob => 0.01,       # Floor for any word's probability
 
     maximum_word_prob => 0.99,       # Cap for any word's probability
-    
+   	
     score_delay => 1,               # Recalculate when learned message count
                                     # exceeds scored message count by this factor
 
+	ignored_tokens => []			# Tokens to ignore while parsing (case insensitive)
+	
 =cut
 
 sub new {
@@ -134,11 +138,12 @@ sub init {
         debug => 0,                     # Integer debug level
         on_disk => 0,                   # Use scratch files if true
         n_observations_required => 5,   # Ignore words with a count less than this
-        number_of_predictors => 15,     # Score using this number of words
+        number_of_predictors => 41,     # Score using this number of words
         minimum_word_prob => 0.01,       # Floor for any word's probability
         maximum_word_prob => 0.99,       # Cap for any word's probability
         score_delay => 1,               # Recalculate when learned message count
                                         # exceeds scored message count by this factor
+		ignored_tokens => [],			# Ignore these tokens (case insensitively)
         %{$opts}                        # Overwrite defaults with user values
     );
     $self->SUPER::init( \%options );
@@ -215,40 +220,129 @@ IP addresses, e-mail, URL's, etc.  Perhaps when I learn Parse::RecDescent.
 
 sub parse { 
     my ($self, $msg) = @_;
-    my %tokens;
-    
-    # load up @lines with all lines from the message we want to use
-    my @lines;
+    my @tokens;
+    my $text;
+	my @ignored_tokens = $self->{options}{ignored_tokens};
+	
     # add people from the To, CC, and From fields -- note, comments
     # in addresses are ignored (so as not to wrongly flag messages
     # about redirection when spams are bounced to a collection 
     # address
-    my @people = ( ( $msg->to ), ( $msg->cc ), ( $msg->from ) );
-    foreach my $person ( @people ) {
+	$text = "";
+	foreach my $person ( ( $msg->to ), ( $msg->cc ) ) {
         if (defined $person) {
-            $person->phrase && push(@lines, $person->phrase);
-            $person->address && push(@lines, $person->address);
+            $person->phrase && ( $text .= " " . $person->phrase );
+            $person->address && ( $text .= " " . $person->address );
         }
     }
-    push( @lines, $msg->subject() ) if $msg->subject(); 
-    push( @lines, $msg->get('x-mailer') ) if $msg->get('xmailer'); 
+	push @tokens, map { "T $_" } $self->tokenize($text); # tag as 'TO'
+	
+	$text = "";
+	foreach my $person ( $msg->from ) {
+        if (defined $person) {
+            $person->phrase && ( $text .= " " . $person->phrase );
+            $person->address && ( $text .= " " . $person->address );
+        }
+    }
+	push @tokens, map { "F $_" } $self->tokenize($text); # tag as 'FROM'
+	
+	$text = $msg->subject();
+	$text and push @tokens, map { "S $_" } $self->tokenize($text); # tag as 'SUBJ'
+
+	$text = $msg->get('xmailer');
+	$text and push @tokens, map { "M $_" } $self->tokenize($text); # tag as 'MAILER'
+	
+	$text = "";
     foreach my $part ($msg->parts('RECURSE')) {
-        next if $part->body->decoded->mimeType->mediaType ne "text";
-        push( @lines, $part->body->decoded->lines );
+        next if $part->body->decoded(keep=>1)->mimeType->mediaType ne "text";
+		if ($part->body->decoded->mimeType->subType eq "html" ) {
+			push @tokens, "C HTML"; # flag html messages
+		}
+        $text .= $part->body->decoded->string;
     }
-    # split each of the lines into tokens
-    foreach my $line ( @lines ) {
-        my @temp = split (/[^a-zA-Z0-9'_$-]+/,$line);    
-        foreach my $word (@temp) {
-            next if ($word eq '');              # or empty leading split
-            next if (length($word) == 1);       # skip length 1
-            next if (length($word) > 40);       # skip long (binary?) tokens
-            next if ($word =~ /\b[0-9]+\b/g );  # or all numbers
-            $tokens{$word}=1;
-        }
-    }
-    return keys %tokens;
+	$text and push @tokens, $self->tokenize($text);
+	
+    return @tokens;
 }
+
+sub tokenize {
+	my $self = shift;
+	my $text = shift;
+	my @ignored_tokens = @_;
+	my @tokens;
+	my %unique_tokens;
+	my @temp;
+	
+	my $HOSTNAME = qr/(?: 	[a-z0-9]\. | [a-z0-9][-a-z0-9]*[a-z0-9]\. )+
+					  (?: 	com|net|org|edu|[a-z][a-z]|biz|info|gov|name|
+					  		int|mil|museum|coop|aero )/ix;
+							
+	# pick out particular constructs from HTML
+		study $text;
+		push @tokens, 	map { m/((?>[^.]+)(\.[^.]+$))/ } # dom.tld and .tld
+						map { lc decode_entities($_) }
+						$text =~ m!(?:href|src)="\w+://([-\w.]+)!ig, 
+		push @tokens, 	map { lc decode_entities($_) } 
+						$text =~ m/href="mailto:(.+?)"/ig;
+		push @tokens, 	map { lc decode_entities($_) } 
+						$text =~ m/lang=(\w+)/ig;
+		push @tokens, 	map { lc decode_entities($_) } 
+						$text =~ m/color(?:="?|:)\s*([#a-zA-Z0-9]+)/ig;
+		push @tokens, 	map { lc decode_entities($_) } 
+						$text =~ m/javascript/ig;
+		push @tokens, 	map { lc decode_entities($_) } 
+						$text =~ m/language:\s*([-a-zA-Z]+)/ig;
+		push @tokens, 	map { lc decode_entities($_) } 
+						$text =~ m/content\s*=\s*"([^"]+)"/ig;
+
+	# transform text 
+		# strip HTML
+		my $hs = new HTML::Strip;
+		$text = $hs->parse( $text );
+		
+		# now safe to decode HTML entities
+		decode_entities( $text );
+
+		# pick out more special bits in text after decoding
+		study $text;
+		push @tokens, 	map { m/((?>[^.]+)(\.[^.]+$))/ } # dom.tld and .tld
+						map { lc }
+						$text =~ m/$HOSTNAME/g;
+
+		push @tokens, 	map { lc } 
+						$text =~ m/[-+.\w]+\@$HOSTNAME/g;
+		
+		# unwind forwarded messages
+		$text =~ s/^(?:>+\p{Z}*)+//mg;
+		
+		# drop punctuation at the ends of words so we can  
+		# break on space and keep symbols in words
+		# note: this kills remaining \n characters!
+		$text =~ s/\p{Punctuation}+(?:[\p{Separator}\p{Control}]|$)/ /g;
+		$text =~ s/(?:^|[\p{Separator}\p{Control}])[\p{Punctuation}]+/ /g; 
+	
+	# split the rest into meaningful tokens
+	@temp = split (/[\p{Separator}\p{Control}]+/,$text);    
+
+	# add token and symbol stripped version
+	push @tokens, 	map { 	my $t=$_; 
+							$t=~s/[^\p{L}\p{M}\p{N}\p{Sc}]//g;
+				   			$_ eq $t ? $_ : ($_, "STRP:$t")
+						} 
+					@temp;
+	
+	# discard unwanted tokens and get to unique list
+	foreach my $word (@tokens) {
+		next if (length($word) == 1);
+		next unless ( $word =~ /[\p{Letter}\p{Number}]/ ); 
+		next if grep(/^$word$/i,@ignored_tokens);
+		next if (length($word) > 40);       # skip long (binary?) tokens
+		$unique_tokens{$word} = 1;
+	}
+	
+    return keys %unique_tokens;
+}
+
 
 =item I<bias> CATEGORY, [BIAS]
 
@@ -335,7 +429,7 @@ Takes a message and returns a list of categories and probabilities in
 decending order.  MESSAGE is a Mail::Message
 
 DETAILS is a optional 
-hash-reference to store the prediction-hashes of the words used in the
+array to store notes about the details of the
 calculation.  DETAILS will be overwritten.
 
 In this class, I<score> uses the probabilities of the top most significant
@@ -350,7 +444,7 @@ called, as it will need to call I<updatepredictors> to refresh.
 
 sub score {
     my ($self, $msg, $dhref) = @_;
-    $dhref and $dhref = {};
+    $dhref and @{$dhref} = ();
 
     $self->updatepredictors
         if (    $self->{cache_meta}{msg_count_current} -
@@ -395,7 +489,12 @@ sub score {
         last if ++$i > $self->{options}{number_of_predictors};
         push @interesting_words, $key;
         if (defined $dhref) {
-            $dhref->{$key}=$predictors{$key};
+			my $txt = "";
+			for my $c ( keys %{ $predictors{$key} } ) {
+				$txt .= " " if $txt;
+				$txt .= sprintf("%s:%.2f", $c, $predictors{$key}{$c});
+			}
+            push @{$dhref}, "$key->($txt)";
         }
     }
     
@@ -504,26 +603,35 @@ sub updatepredictors {
 I<prediction> takes an array of token probabilities and returns the collective prediction
 based on all of them taken together
 
-Overall probability based on N tokens comes from Graham:
+Overall probability based on N tokens comes from Robinson using Fisher's method:
 
-    prob(bad) = 
-                          p(w1|b)*p(w2|b)*...*p(wN|b)
-          ------------------------------------------------------------
-          p(w1|b)*p(w2|b)*...*p(wN|b) + p(w1|!b)*p(w2|!b)*...*p(wN|!b)
+	P = prbx( -2 * sum(ln(1-f(w))), 2*N)
+	Q = prbx( -2 * sum(ln (f(w))), 2*N)
+	
+    prob(category) = (1 + Q - P) /2
 
+	where prbx is inverse chi-squared probability and f(w) is p(category|word);
 
     $result = $bb->prediction( @predictors );
     
 =cut
 
 sub prediction {
-    my ($self, @p) = @_;
-    my $f = 1;
-    my $notf = 1;
-    
-    return 0 if (@p == 0);
-    foreach my $i (@p) { $f *= $i; $notf *= (1 - $i) };
-    return $f / ($f + $notf); 
+    my ($self, @f) = @_;
+    my $N = @f;
+   	
+    return 0.5 unless $N;
+
+	my ($sum_f, $sum_1_minus_f) = (0,0);
+	for (@f) {
+		$sum_f += log($_);
+		$sum_1_minus_f += log(1 - $_);
+	}
+	
+	my $P = Statistics::Distributions::chisqrprob( 2 * $N, -2 * $sum_1_minus_f );	
+	my $Q = Statistics::Distributions::chisqrprob( 2 * $N, -2 * $sum_f );	
+	
+    return (1 + $Q - $P) / 2;
 }
 
 1;

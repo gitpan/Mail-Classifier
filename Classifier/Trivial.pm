@@ -21,7 +21,7 @@ use Mail::Classifier;
 
 our @ISA = qw( Mail::Classifier );
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 ### Initial Documentation ###
 
