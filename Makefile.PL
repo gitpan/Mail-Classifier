@@ -18,7 +18,8 @@ WriteMakefile(
                                 File::Spec => 0,
 					   			HTML::Strip => 1.01,
 								HTML::Entities => 1.27,
-								Statistics::Distributions => 1.02		},
+								Statistics::Distributions => 1.02,
+					    },
     ($] >= 5.005 ?    ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM => 'Classifier.pm', # retrieve abstract from module
        AUTHOR     => 'David Golden <david@hyperbolic.net>') : ()),

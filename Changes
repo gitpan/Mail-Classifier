@@ -3,7 +3,12 @@ Changes to Mail::Classifier
 ========================================
 Revision history for Perl extension Mail::Classifier.
 
-0.12	Tue Feb 24 15:57:21 EST 2004
+0.13	Fri Apr 23 07:04:14 EDT 2004
+
+	-	Test::Distribution now optional for end users --  t/0.t skips the test 
+	    if Test::Distribution is not installed
+	    
+0.12	Thu Apr 23 08:03:57 EDT 2004
 
 	-	tag() now tags with reserved category "UNKNOWN" if no category
 		meets the probability threshold.  This guarantees that all messages

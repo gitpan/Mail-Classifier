@@ -15,7 +15,7 @@ use File::Temp;
 use File::Spec;
 use Storable qw(lock_nstore lock_retrieve);
 
-our $VERSION = '0.12';
+our $VERSION = '0.13';
 
 ### Initial Documentation ###
 
