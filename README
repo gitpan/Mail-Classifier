@@ -1,0 +1,127 @@
+========================================
+README  Mail::Classifier            
+VERSION 0.10
+========================================
+
+WHAT IS MAIL::CLASSIFIER?
+
+Mail::Classifier provides a class-based framework for writing filters to
+classify or sort e-mail.  
+
+The class was written primarily to support creation of and
+experimentation with content-based, probabilistic mail classification
+approaches where a mail classifier is separately trained on several mail
+files before being applied to the classification of new e-mails.
+However, this class can be applied or adapted to any mail classification
+approach that differentiates between a "learning" phase and a "scoring"
+(prediction) phase.
+
+SUMMARY OF FEATURES
+
+    *   Supports single-message processing (training or scoring) or
+        automatic scoring of all messages in a mailbox
+    
+    *   Supports tagging messages (or all messages in a mailbox) with a 
+        customized header of classification results
+    
+    *   Supports several standard mailbox formats (using Mail::Box)
+    
+    *   Provides statistical cross-validation of classification accuracy
+    
+    *   Allows users to define an external parsing function for messages
+
+    *   Supports saving/loading Mail::Classifier objects
+
+    *   Supports storing working data either in memory or as scratch files
+        on disk with MLDBM::Sync
+
+    *   Includes Mail::Classifier::GrahamSpam, which implements Naive
+        Bayesian filtering with several customizable parameters
+
+USAGE
+
+    $mc = Mail::Classifier::GrahamSpam->new(); 
+    
+    $mc->train( {   'spam.txt' => 'SPAM', 
+                    'notspam.txt' => 'NOTSPAM' } ); 
+    
+    # Assuming $msg is a Mail::Message object... 
+    
+    my ($bestcat, $prob, @other_scores) = $mc->score( $msg );
+
+DETAILS
+
+Mail::Classifier is an abstract base class for mail classification.  As
+such provides capabilities for defining working data tables (which may
+be stored in memory or on disk) that will persist across saves/restores.
+It also provides the message handling capabilities necessary to process
+mailboxes and conduct statistical validation.  
+
+Classes inherit from Mail::Classifier to implement a particular
+classification algorithm or technique.  Derived classes must implement
+methods for learning and scoring messages.  Typically, derived classes
+will also define methods for parsing messages into tokens for use in the
+learning and scoring methods.
+
+Two derivied classes are included.  The first, Mail::Classifier::Trivial
+is an example of how to extend the base class.  The second class,
+Mail::Classifier::GrahamSpam, implements a Naive Bayesian Filtering
+based on the article "A Plan For Spam" by Paul Graham
+(http://www.paulgraham.com/spam.html), and is a fully-functional spam
+filter.  See the RESULTS section, below.
+
+One of the key benefits of Mail::Classifier is built-in support for
+cross-validation.  Cross-validation divides training data into "N" folds
+and iteratively scores each fold based on a model built on all remaining
+folds to maximize available data used in model evaluation. [See "An
+Introduction to the Bootstrap" by Efron and Tibshirani (1998), p. 239.
+for more details.]  The result is an out-of-sample evaluation of the
+performance (i.e. accuracy) of the classification engine which can
+operate on smaller training sets without explicit hold-out samples
+for validation.
+
+Mail::Classifier is not an efficient approach to high-volume
+classification.  (It's in Perl, not C.)  However, it is ideal for rapid
+experimentation and testing of classification algorithms, and benefits
+from Perl Regexp capabilities for exploring alternative message
+tokenization routines.
+
+RESULTS
+
+It works pretty well.  Version 0.10 of GrahamSpam achieved 95.9% spam
+identification accuracy, with only 0.46% false positives during a test
+run with no special tuning.  This result used a four-fold
+cross-validation on a 19 MB mail archive (about 4800 messages) and a 19
+MB spam archive (about 1800 messages.  (Results will, of course, vary
+significantly based on the particular spam and non-spam training sets
+used.)  The four-fold run (processing almost 27k messages) took only 14
+minutes on a 1 GHz Duron processor. 
+ 
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL 
+   make 
+   make test 
+   make install
+
+DEPENDENCIES
+
+This module requires these other modules and libraries:
+
+    MLDBM 
+    MLDBM::Sync
+    File::Copy
+    Mail::Box
+    Mail::Address
+    File::Temp
+    File::Spec
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2002 David Golden <david@hyperbolic.net>
+
+This library is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself. 
+

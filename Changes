@@ -1,0 +1,13 @@
+========================================
+Changes to Mail::Classifier            
+========================================
+Revision history for Perl extension Mail::Classifier.
+
+0.10    Tue Jan 14 12:19:05 EST 2003
+    -   completely rewritten from first attempts; first real "alpha"
+        version of Mail::Classifier, Mail::Classifier::Trivial, 
+        and Mail::Classifier::GrahamSpam 
+
+0.01    Thu Sep 19 00:46:59 EST 2002
+    -   original testing version 
+

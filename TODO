@@ -1,0 +1,51 @@
+=============================
+TODO    Mail::Classifier
+VERSION 0.10
+=============================
+
+CPAN/Module Maintenance
+
+*   Write better test modules for CPAN packaging
+
+Functionality Enhancements
+
+*   Add functionality to Classifier/GS to allow external
+    replacement of the word-prob-score
+    and combined-predictors-probability functions similar to parse
+
+*   Allow learn/score to take \@array and construct a Mail::Message on
+    the fly
+
+*   Add functionality to return a classification matrix for new sample
+    data using an existing training set -- i.e. not cross-validating the
+    new sample data.  (Tests the training set, not the algorithm/parameters.)
+
+*   More broadly, I need a "score_all" function (that works either on a 
+    list of mailboxes or a reference to an array of messages) which will
+    return the number of messages in each category.  This function then can
+    drive cross_validate and an out-of-sample-test function. (Evaluate? Classify?)
+
+Optimization/Efficiency
+
+*   Test speed problems in parse()
+
+*   Benchmark speed with no disk cache vs disk cache just for word_count as
+    a default setting for GrahamSpam
+
+*   Experiment with alternative storage mechanisms and formats (array of arrays),
+    separate files/tables for each category, etc. in GrahamSpam
+
+Algorithm Tuning/Benchmarking
+
+*   Test Graham's default cut-offs and biases vs alternatives
+
+*   Test alternative significance cut-offs
+
+*   Test results of higher threshold for n_observations_required (increased
+    confidence, reduced size of word_score, but slower to flag new spams...)
+
+Utility
+
+*   Write an example program that can be used with procmail to filter
+    or tag e-mail
+

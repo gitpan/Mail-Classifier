@@ -1,0 +1,16 @@
+Changes
+MANIFEST
+Makefile.PL
+README
+TODO
+examples/trivial-test.pl
+examples/graham-test.pl
+examples/corpora/README
+examples/corpora/sa-nonspam.mbox
+examples/corpora/sa-spam.mbox
+t/1.t
+t/2.t
+t/3.t
+Classifier/GrahamSpam.pm
+Classifier/Trivial.pm
+Classifier.pm

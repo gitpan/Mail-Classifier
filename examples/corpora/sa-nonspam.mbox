@@ -1,0 +1,4195 @@
+From social-admin@linux.ie  Wed Aug  7 10:20:16 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E1BE7440C9
+	for <jm@localhost>; Wed,  7 Aug 2002 05:20:12 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 10:20:12 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g779KWk19356 for
+    <jm+ilug-social@jmason.org>; Wed, 7 Aug 2002 10:20:32 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA13739; Wed, 7 Aug 2002 10:18:50 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA13699 for <social@linux.ie>;
+    Wed, 7 Aug 2002 10:18:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g779IgY00506 for <social@linux.ie>;
+    Wed, 7 Aug 2002 10:18:42 +0100
+Date: Wed, 7 Aug 2002 10:18:41 +0100
+To: social@linux.ie
+Subject: Re: [ILUG-Social] Online Bookstores
+Message-Id: <20020807101841.A333@ie.suberic.net>
+References: <20020806162122.B604@barge.tcd.ie>
+    <20020806162409.A31290@m1.wombat.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+Content-Disposition: inline
+Content-Transfer-Encoding: 8bit
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020806162409.A31290@m1.wombat.ie>; from joe@galway.net on
+    Tue, Aug 06, 2002 at 04:24:09PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1029143922.62a561@ie.suberic.net>
+Mail-Followup-To: kevin+dated+1029143922.62a561@ie.suberic.net,
+	social@linux.ie
+X-Delivery-Agent: TMDA/0.57
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+On Tue, Aug 06, 2002 at 04:24:09PM +0100, Joe Desbonnet wrote:
+> I've found Micromail in Cork quite good:
+
+play247.com seems to be a good site for dvd's.  prices are in sterling,
+but they have free shipping.  plus they're selling buffy season 5 dvd's
+for �10 less then blackstar...
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From social-admin@linux.ie  Wed Aug  7 14:38:53 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2AAEC440A8
+	for <jm@localhost>; Wed,  7 Aug 2002 09:38:53 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Wed, 07 Aug 2002 14:38:53 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g77DZrk31673 for
+    <jm+ilug-social@jmason.org>; Wed, 7 Aug 2002 14:35:58 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA24846; Wed, 7 Aug 2002 14:34:07 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail1.mail.iol.ie (mail1.mail.iol.ie [194.125.2.192]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA24787 for <social@linux.ie>;
+    Wed, 7 Aug 2002 14:34:01 +0100
+Received: from [193.203.143.142] (helo=Hobbiton.cod.ie) by
+    mail1.mail.iol.ie with esmtp (Exim 3.35 #1) id 17cQoo-0006ju-00 for
+    social@linux.ie; Wed, 07 Aug 2002 14:25:43 +0100
+Received: (from cdaly@localhost) by Hobbiton.cod.ie (8.11.6/8.9.3) id
+    g77CV0w28098 for social@linux.ie; Wed, 7 Aug 2002 13:31:00 +0100
+Date: Wed, 7 Aug 2002 13:30:59 +0100
+From: Conor Daly <conor.daly@oceanfree.net>
+To: social@linux.ie
+Subject: Re: [ILUG-Social] Anyone in  Limerick want to help?
+Message-Id: <20020807133059.A27957@Hobbiton.cod.ie>
+Mail-Followup-To: social@linux.ie
+References: <20020806152937.A19525@Hobbiton.cod.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <20020806152937.A19525@Hobbiton.cod.ie>; from
+    conor.daly@oceanfree.net on Tue, Aug 06, 2002 at 03:29:38PM +0100
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+Sorted.  I've got someone...
+
+Thanks,
+Conor
+
+On Tue, Aug 06, 2002 at 03:29:38PM +0100 or so it is rumoured hereabouts, 
+Conor Daly thought:
+> I've had an offer of a couple of secondhand 18" LCD monitors in Limerick.
+> Would anyone like to assist by going to test, purchase and store same for
+> a couple of weeks (I'm in dublin and going away for a bit so I won't be
+> able to organise collection for a while)?  Please reply off-list of you
+> can help.
+
+-- 
+Conor Daly <conor.daly@oceanfree.net>
+
+Domestic Sysadmin :-)
+---------------------
+Faenor.cod.ie
+  1:32pm  up 75 days, 22:50,  0 users,  load average: 0.00, 0.00, 0.00
+Hobbiton.cod.ie
+  1:30pm  up 18 days, 19:54,  1 user,  load average: 0.24, 0.12, 0.03
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From social-admin@linux.ie  Fri Aug  9 15:12:35 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 99001440CF
+	for <jm@localhost>; Fri,  9 Aug 2002 10:12:31 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:12:31 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79ECRb05309 for
+    <jm+ilug-social@jmason.org>; Fri, 9 Aug 2002 15:12:32 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id MAA05617 for
+    <jm+ilug-social@jmason.org>; Fri, 9 Aug 2002 12:10:04 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA04475; Fri, 9 Aug 2002 12:09:34 +0100
+Received: from lhidns.gov.ie ([193.1.228.222]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA04437 for <social@linux.ie>; Fri,
+    9 Aug 2002 12:09:27 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [193.1.228.222] claimed to
+    be lhidns.gov.ie
+Received: from gw.educ.irlgov.ie (educ-gw.gov.ie [192.168.6.1] (may be
+    forged)) by lhidns.gov.ie (8.9.3/8.9.3) with ESMTP id MAA02879 for
+    <social@linux.ie>; Fri, 9 Aug 2002 12:08:55 +0100
+Received: (from fwtk@localhost) by gw.educ.irlgov.ie (8.8.6/8.8.6) id
+    NAA02676 for <social@linux.ie>; Fri, 9 Aug 2002 13:27:52 +0100 (BST)
+Received: from unknown(10.0.0.13) by gw.educ.irlgov.ie via smap (V2.0) id
+    xma002668; Fri, 9 Aug 02 13:27:22 +0100
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Date: Fri, 9 Aug 2002 12:08:24 +0100
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Message-Id: <9C498074D5419A44B05349F5BF2C26301CFA74@sdubtalex01.education.gov.ie>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: Doom for Linux
+Thread-Index: AcI/lRHWr1xxxPlzQAm4xeZ4WWnaqA==
+From: "Ryan, Shane" <Shane_Ryan@education.gov.ie>
+To: <social@linux.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    MAA04437
+Subject: [ILUG-Social] Doom for Linux
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+hi all,
+
+I'm looking to get my hands on
+either Doom I or II for my PC.
+Unfortunately I cannot access 
+IDSoftware's site because of
+the silly web-filtering system
+in place here.
+
+Does anyone know where I can
+buy a copy of Doom (which I will
+be running on Linux...) online?
+Last time I asked in Game they laughed
+at me ;]
+
+I would ask to swap for Linux software
+but that wouldn't be ethical or legal.
+Hence the purchasing question.
+
+Regards,
+Shane
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From social-admin@linux.ie  Fri Aug  9 15:12:30 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B1DE343FB1
+	for <jm@localhost>; Fri,  9 Aug 2002 10:12:27 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 09 Aug 2002 15:12:27 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g79EC2b05272 for
+    <jm+ilug-social@jmason.org>; Fri, 9 Aug 2002 15:12:02 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id MAA05737 for
+    <jm+ilug-social@jmason.org>; Fri, 9 Aug 2002 12:25:31 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id MAA05140; Fri, 9 Aug 2002 12:24:35 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail05.svc.cra.dublin.eircom.net
+    (mail05.svc.cra.dublin.eircom.net [159.134.118.21]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id MAA05099 for <social@linux.ie>; Fri,
+    9 Aug 2002 12:24:29 +0100
+Received: (qmail 88517 messnum 261620 invoked from
+    network[159.134.211.126/p382.as1.castleblaney1.eircom.net]);
+    9 Aug 2002 11:23:59 -0000
+Received: from p382.as1.castleblaney1.eircom.net (HELO
+    contactjuggling.org) (159.134.211.126) by mail05.svc.cra.dublin.eircom.net
+    (qp 88517) with SMTP; 9 Aug 2002 11:23:59 -0000
+Message-Id: <3D53A646.6020805@contactjuggling.org>
+Date: Fri, 09 Aug 2002 12:23:50 +0100
+From: Kae Verens <kverens@contactjuggling.org>
+User-Agent: Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.1b) Gecko/20020721
+X-Accept-Language: en, fi, fr, ga, ja, nl
+MIME-Version: 1.0
+To: "Ryan, Shane" <Shane_Ryan@education.gov.ie>
+Cc: social@linux.ie
+Subject: Re: [ILUG-Social] Doom for Linux
+References: <9C498074D5419A44B05349F5BF2C26301CFA74@sdubtalex01.education.gov.ie>
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Transfer-Encoding: 7bit
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+Ryan, Shane wrote:
+> hi all,
+> 
+> I'm looking to get my hands on
+> either Doom I or II for my PC.
+> Unfortunately I cannot access 
+> IDSoftware's site because of
+> the silly web-filtering system
+> in place here.
+> 
+> Does anyone know where I can
+> buy a copy of Doom (which I will
+> be running on Linux...) online?
+> Last time I asked in Game they laughed
+> at me ;]
+> 
+> I would ask to swap for Linux software
+> but that wouldn't be ethical or legal.
+> Hence the purchasing question.
+> 
+> Regards,
+> Shane
+> 
+
+there was a copy of Doom 1 that came free with RedHat 5.2 - 
+unfortunately, it doesn't seem to be on the newer CDs.
+
+get the last laugh by going in, and saying that ID soft actually 
+released a Linux wrapper for the game. you need to buy the CDs, though, 
+then download the free wrapper.
+
+-- 
+Kae Verens
+http://www.contactjuggling.org/users/kverens/
+http://www.contactjuggling.org/ (webmaster)
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From social-admin@linux.ie  Thu Aug 15 10:47:56 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 6923F43C36
+	for <jm@localhost>; Thu, 15 Aug 2002 05:46:41 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 15 Aug 2002 10:46:41 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7EJ2l431259 for
+    <jm+ilug-social@jmason.org>; Wed, 14 Aug 2002 20:02:47 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA25002; Wed, 14 Aug 2002 20:02:24 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from linuxmafia.com (linuxmafia.COM [198.144.195.186]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA24963 for <social@linux.ie>;
+    Wed, 14 Aug 2002 20:02:17 +0100
+Received: from rick by linuxmafia.com with local (Exim 3.35 #1 (Debian))
+    id 17f3PN-0005XE-00; Wed, 14 Aug 2002 12:02:17 -0700
+Date: Wed, 14 Aug 2002 12:02:13 -0700
+To: Alan Horkan <horkana@tcd.ie>
+Cc: social@linux.ie
+Message-Id: <20020814190213.GG9654@linuxmafia.com>
+References: <Pine.LNX.4.40.0208141352420.9634-100000@turing.maths.tcd.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <Pine.LNX.4.40.0208141352420.9634-100000@turing.maths.tcd.ie>
+User-Agent: Mutt/1.4i
+From: Rick Moen <rick@linuxmafia.com>
+Subject: [ILUG-Social] Re: [ILUG] Linux: the film.
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+[Moved from the ILUG list.  Not _entirely_ offlist as requested, but
+close enough.]
+
+Quoting Alan Horkan (horkana@tcd.ie):
+
+> More likely we would try and get it when it comes out on video/dvd and
+> show it then (which AFAIK is legal as we are non profit private
+> organisation having a private showing and not charging our members for
+> the showing. any opinions on the legality of this should be sent
+> offlist).
+
+
+One bloke's opinion:
+
+
+Date: Sat, 01 Jun 2002 00:18:29 -0700
+From: "J.T.S. Moore" <jtsmoore@pacificnet.net>
+Reply-To: jtsmoore@pacificnet.net
+To: Marc MERLIN <marc_news@vasoftware.com>,
+   Daniel Isacc Walker <dwalker@cats.ucsc.edu>
+CC: svlug@svlug.org, Rick Moen <rick@linuxmafia.com>, sluglug@sluglug.ucsc.edu,
+   Peter Belew <peterbe@sonic.net>, "Eric A. Perlman" <eric@yikes.com>,
+   i3e-off@cse.ucsc.edu, slug-web@sluglug.ucsc.edu
+Subject: REVOLUTION OS is now authorized for UC Santa Cruz screening
+
+To all,
+
+I have read the series of e-mails related to the unauthorized UC Santa
+Cruz screening that was scheduled for June 1.  I sincerely appreciate
+IEEE's good faith effort to correct the mistake.
+
+Consequently, so as not to inconvenience the people planning to attend
+the screening, I want to give IEEE and SlugLUG permission to screen
+REVOLUTION OS at 1 PM on June 1.  I would ask the members of SVLUG to
+hold off on attending the screening for the simple reason that I am
+trying to get REVOLUTION OS booked into the Camera 3 in San Jose, and I
+would prefer that SVLUG's members have a chance to see a nice 35mm print
+of the film.  If my distributor is unable to book the film into a
+theater in the Bay Area, I promise that I will work with SVLUG to
+quickly set up a screening for its members.
+
+I realize there may be some members of SlugLUG who are unhappy that I
+originally requested that they not hold an unauthorized screening of
+REVOLUTION OS.  There are several reasons why I made the request, and
+none of them have anything to do with me wanting to be a jerk.  
+
+One SlugLUG member commented that it was odd that a movie about the Open
+Source movement would not be available for open viewings.  Another
+SlugLUG member remarked that my request smacks of Bill Gates's Open Letter
+to Hobbyists.  
+
+The bottomline is that I did make a film about the Open Source movement,
+but to assume that automatically means that the film is itself Open
+Sourced seems to be a little bit of a stretch.  If I made a movie about
+the history of vegetarianism that would not automatically mean I'm a
+vegetarian.  
+
+I simply thought Open Source and Free Software were compelling subjects
+worth exploring and documenting.  As a result, I came to admire many
+aspects of the Open Source movement and chose to focus the documentary
+on the movement's positive history.  However, I do not think I should be
+punished for telling the story of Free Software and Open Source by
+having my intellectual property misappropriated.   More practically, my
+feelings about Open Sourcing REVOLUTION OS are abundantly clear when you
+see the explicit copyright notice at the end of the film's credits.  
+
+I realize that making a videotape copy for personal use from a TV airing
+is considered fair use.  I believe in a healthy fair use doctrine. 
+However, there is a big difference between viewing your personal copy at
+home with a few friends and holding a publicly advertised screening on a
+university campus.  So I freely admit my objection to unauthorized
+screenings of REVOLUTION OS does echo Bill Gates's letter.  Personally, I
+believe that the creator of a piece of intellectual property should
+retain the choice to Open Source their IP.  If the Open Source movement
+is not voluntary then it is really just piracy.
+
+One of the reasons I am concern with unauthorized group screenings of
+the film, is that my distributor is planning in a few weeks to begin
+selling VHS copies of the film for educational/institutional use with a
+license permitting noncommercial large group screenings.  We hope to use
+the money from these sales to fund the authoring and replication of the
+DVD.  I want to release the DVD as soon as possible, but I cannot afford
+to take on anymore REVOLUTION OS-related debt.  Thus the importance of
+preserving the educational/institutional market.
+
+Frequently, I will read comments on Slashdot and other mailing lists
+that justify the piracy of music on the grounds that it benefits the
+artists and only hurts the greedy record labels.  Well, in the case of
+REVOLUTION OS there is no multinational media conglomerate to punish. 
+It's just me.  I made and financed the film on my own.  I have worked
+full-time for almost three years without a salary.  The only way I will
+get out of debt and have a chance to make another film is if people seek
+out legal opportunities to view REVOLUTION OS.
+
+I truly appreciate the enthusiasm of the Open Source community for
+REVOLUTION OS, and I am grateful that people do want to see it.  If you
+will just bare with me, I will figure out a way for all interested
+persons to legally view it.
+
+I hope the dust up over the unauthorized, and now authorized, screening
+at UC Santa Cruz has not inconvenienced anyone.
+
+Sincerely,
+
+J.T.S. Moore
+Director, REVOLUTION OS
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From social-admin@linux.ie  Thu Aug 15 10:51:10 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 22D4643C51
+	for <jm@localhost>; Thu, 15 Aug 2002 05:49:38 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Thu, 15 Aug 2002 10:49:38 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7ENko409058 for
+    <jm+ilug-social@jmason.org>; Thu, 15 Aug 2002 00:46:50 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA04661; Thu, 15 Aug 2002 00:46:34 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from salmon.maths.tcd.ie (mmdf@salmon.maths.tcd.ie
+    [134.226.81.11]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id AAA04633
+    for <social@linux.ie>; Thu, 15 Aug 2002 00:46:28 +0100
+Received: from turing.maths.tcd.ie by salmon.maths.tcd.ie with SMTP id
+    <aa16866@salmon>; 15 Aug 2002 00:46:28 +0100 (BST)
+Date: Thu, 15 Aug 2002 00:46:23 +0100 (IST)
+From: Alan Horkan <horkana@tcd.ie>
+X-X-Sender: horkana@turing.maths.tcd.ie
+To: Rick Moen <rick@linuxmafia.com>
+Cc: social@linux.ie
+In-Reply-To: <20020814190213.GG9654@linuxmafia.com>
+Message-Id: <Pine.LNX.4.40.0208150041250.15601-100000@turing.maths.tcd.ie>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Subject: [ILUG-Social] Re: [ILUG] Linux: the film.
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+
+duly noted
+
+definately would make the extra effort to talk directly with these people
+and mention to the IFC (local arts cinema) about a more approriate
+showing.
+
+Would enough people in ILUG be interested to cover the possible costs
+of a showing some Saturday afternoon/morning.
+
+Anyway this is distant future anyway i have too much on my plate already.
+
+I hope the DVD they produce wont be region coded, damned anti-consumer
+cartels and monoplistic tendencies of coporate greed.
+
+Is this the same film the 2600 people are always going on about or is that
+something else?
+
+Later
+Alan
+
+On Wed, 14 Aug 2002, Rick Moen wrote:
+
+> Date: Wed, 14 Aug 2002 12:02:13 -0700
+> From: Rick Moen <rick@linuxmafia.com>
+> To: Alan Horkan <horkana@tcd.ie>
+> Cc: social@linux.ie
+> Subject: Re: [ILUG] Linux: the film.
+>
+> [Moved from the ILUG list.  Not _entirely_ offlist as requested, but
+> close enough.]
+>
+> Quoting Alan Horkan (horkana@tcd.ie):
+>
+> > More likely we would try and get it when it comes out on video/dvd and
+> > show it then (which AFAIK is legal as we are non profit private
+> > organisation having a private showing and not charging our members for
+> > the showing. any opinions on the legality of this should be sent
+> > offlist).
+>
+>
+> One bloke's opinion:
+>
+>
+> Date: Sat, 01 Jun 2002 00:18:29 -0700
+> From: "J.T.S. Moore" <jtsmoore@pacificnet.net>
+> Reply-To: jtsmoore@pacificnet.net
+> To: Marc MERLIN <marc_news@vasoftware.com>,
+>    Daniel Isacc Walker <dwalker@cats.ucsc.edu>
+> CC: svlug@svlug.org, Rick Moen <rick@linuxmafia.com>, sluglug@sluglug.ucsc.edu,
+>    Peter Belew <peterbe@sonic.net>, "Eric A. Perlman" <eric@yikes.com>,
+>    i3e-off@cse.ucsc.edu, slug-web@sluglug.ucsc.edu
+> Subject: REVOLUTION OS is now authorized for UC Santa Cruz screening
+>
+> To all,
+>
+> I have read the series of e-mails related to the unauthorized UC Santa
+> Cruz screening that was scheduled for June 1.  I sincerely appreciate
+> IEEE's good faith effort to correct the mistake.
+>
+> Consequently, so as not to inconvenience the people planning to attend
+> the screening, I want to give IEEE and SlugLUG permission to screen
+> REVOLUTION OS at 1 PM on June 1.  I would ask the members of SVLUG to
+> hold off on attending the screening for the simple reason that I am
+> trying to get REVOLUTION OS booked into the Camera 3 in San Jose, and I
+> would prefer that SVLUG's members have a chance to see a nice 35mm print
+> of the film.  If my distributor is unable to book the film into a
+> theater in the Bay Area, I promise that I will work with SVLUG to
+> quickly set up a screening for its members.
+>
+> I realize there may be some members of SlugLUG who are unhappy that I
+> originally requested that they not hold an unauthorized screening of
+> REVOLUTION OS.  There are several reasons why I made the request, and
+> none of them have anything to do with me wanting to be a jerk.
+>
+> One SlugLUG member commented that it was odd that a movie about the Open
+> Source movement would not be available for open viewings.  Another
+> SlugLUG member remarked that my request smacks of Bill Gates's Open Letter
+> to Hobbyists.
+>
+> The bottomline is that I did make a film about the Open Source movement,
+> but to assume that automatically means that the film is itself Open
+> Sourced seems to be a little bit of a stretch.  If I made a movie about
+> the history of vegetarianism that would not automatically mean I'm a
+> vegetarian.
+>
+> I simply thought Open Source and Free Software were compelling subjects
+> worth exploring and documenting.  As a result, I came to admire many
+> aspects of the Open Source movement and chose to focus the documentary
+> on the movement's positive history.  However, I do not think I should be
+> punished for telling the story of Free Software and Open Source by
+> having my intellectual property misappropriated.   More practically, my
+> feelings about Open Sourcing REVOLUTION OS are abundantly clear when you
+> see the explicit copyright notice at the end of the film's credits.
+>
+> I realize that making a videotape copy for personal use from a TV airing
+> is considered fair use.  I believe in a healthy fair use doctrine.
+> However, there is a big difference between viewing your personal copy at
+> home with a few friends and holding a publicly advertised screening on a
+> university campus.  So I freely admit my objection to unauthorized
+> screenings of REVOLUTION OS does echo Bill Gates's letter.  Personally, I
+> believe that the creator of a piece of intellectual property should
+> retain the choice to Open Source their IP.  If the Open Source movement
+> is not voluntary then it is really just piracy.
+>
+> One of the reasons I am concern with unauthorized group screenings of
+> the film, is that my distributor is planning in a few weeks to begin
+> selling VHS copies of the film for educational/institutional use with a
+> license permitting noncommercial large group screenings.  We hope to use
+> the money from these sales to fund the authoring and replication of the
+> DVD.  I want to release the DVD as soon as possible, but I cannot afford
+> to take on anymore REVOLUTION OS-related debt.  Thus the importance of
+> preserving the educational/institutional market.
+>
+> Frequently, I will read comments on Slashdot and other mailing lists
+> that justify the piracy of music on the grounds that it benefits the
+> artists and only hurts the greedy record labels.  Well, in the case of
+> REVOLUTION OS there is no multinational media conglomerate to punish.
+> It's just me.  I made and financed the film on my own.  I have worked
+> full-time for almost three years without a salary.  The only way I will
+> get out of debt and have a chance to make another film is if people seek
+> out legal opportunities to view REVOLUTION OS.
+>
+> I truly appreciate the enthusiasm of the Open Source community for
+> REVOLUTION OS, and I am grateful that people do want to see it.  If you
+> will just bare with me, I will figure out a way for all interested
+> persons to legally view it.
+>
+> I hope the dust up over the unauthorized, and now authorized, screening
+> at UC Santa Cruz has not inconvenienced anyone.
+>
+> Sincerely,
+>
+> J.T.S. Moore
+> Director, REVOLUTION OS
+>
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From social-admin@linux.ie  Mon Aug 19 11:46:11 2002
+Return-Path: <social-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A202A43C47
+	for <jm@localhost>; Mon, 19 Aug 2002 06:28:46 -0400 (EDT)
+Received: from phobos [127.0.0.1]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 19 Aug 2002 11:28:46 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g7JAHx618179 for
+    <jm+ilug-social@jmason.org>; Mon, 19 Aug 2002 11:17:59 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA32021; Mon, 19 Aug 2002 11:17:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail05.svc.cra.dublin.eircom.net
+    (mail05.svc.cra.dublin.eircom.net [159.134.118.21]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id LAA31993 for <social@linux.ie>; Mon,
+    19 Aug 2002 11:17:38 +0100
+Received: (qmail 16061 messnum 264764 invoked from
+    network[159.134.146.25/pc537.as1.galway1.eircom.net]); 19 Aug 2002
+    10:17:08 -0000
+Received: from pc537.as1.galway1.eircom.net (HELO ciaran) (159.134.146.25)
+    by mail05.svc.cra.dublin.eircom.net (qp 16061) with SMTP; 19 Aug 2002
+    10:17:08 -0000
+Message-Id: <006701c2476a$64297820$ac0305c0@ciaran>
+From: "Ciaran Mac Lochlainn" <ciaran17@eircom.net>
+To: "Linux Socials" <social@linux.ie>
+Date: Mon, 19 Aug 2002 11:22:58 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2462.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2462.0000
+Subject: [ILUG-Social] Tim O'Reilly, Bill Gates and Edgar Villanueva
+Sender: social-admin@linux.ie
+Errors-To: social-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group social events <social.linux.ie>
+X-Beenthere: social@linux.ie
+
+Interesting take...
+
+"But the more I think about it, the more you I realize that having
+governments specify software licensing policies is a bad idea."
+
+http://www.oreillynet.com/pub/wlg/1840
+
+
+
+-- 
+Irish Linux Users' Group Social Events: social@linux.ie
+http://www.linux.ie/mailman/listinfo/social for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+From ilug-admin@linux.ie  Fri Jul 19 14:27:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CEC3A43FAD
+	for <jm@localhost>; Fri, 19 Jul 2002 09:27:22 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 14:27:22 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JDPYJ32045 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 14:25:34 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA06600; Fri, 19 Jul 2002 14:21:16 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id OAA06567
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 14:21:10 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts15-233.dublin.indigo.ie
+    [194.125.176.233]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    3811FF8E3 for <ilug@linux.ie>; Fri, 19 Jul 2002 14:06:04 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    B108F3C04F; Fri, 19 Jul 2002 14:28:42 +0100 (IST)
+Date: Fri, 19 Jul 2002 14:28:42 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Message-Id: <20020719132842.GA2506@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.27i
+Subject: [ILUG] How to copy some files
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I have about 60G of data which I need to copy from one disk to another.
+However, I'm not sure how I should best copy it. The problem is the bulk of
+the data is images and most of these image have two directory entries i.e.
+there is a hard link to each file. If I copy them using cp -a or my usual
+favourite of find .|cpio -pmd other_dir it's going to copy each file twice,
+which is not what I want. dump / restore would take care of this if the
+source filesystem wasn't reiserfs :-( Any suggestions ?
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 14:32:52 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9310B43FAD
+	for <jm@localhost>; Fri, 19 Jul 2002 09:32:52 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 14:32:52 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JDUlJ32430 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 14:30:47 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA07130; Fri, 19 Jul 2002 14:30:09 +0100
+Received: from roeex01.renre-europe.com ([62.17.152.2]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id OAA07103 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 14:30:02 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.152.2] claimed to
+    be roeex01.renre-europe.com
+Received: from localhost.localdomain (ThisAddressDoesNotExist
+    [172.17.1.250]) by roeex01.renre-europe.com with SMTP (Microsoft Exchange
+    Internet Mail Service Version 5.5.2653.13) id PGQ2R2QQ; Fri,
+    19 Jul 2002 14:54:06 +0100
+Subject: Re: [ILUG] How to copy some files
+From: Mark Kilmartin <mrk@renre-europe.com>
+To: ilug@linux.ie
+In-Reply-To: <20020719132842.GA2506@bagend.makalumedia.com>
+References: <20020719132842.GA2506@bagend.makalumedia.com>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+X-Mailer: Ximian Evolution 1.0.7
+Date: 19 Jul 2002 14:29:34 +0100
+Message-Id: <1027085376.4944.9.camel@klein>
+MIME-Version: 1.0
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+How about rsync.
+
+It doesn't only work for remote files.
+
+MArk
+
+
+On Fri, 2002-07-19 at 14:28, Niall O Broin wrote:
+> I have about 60G of data which I need to copy from one disk to another.
+> However, I'm not sure how I should best copy it. The problem is the bulk of
+> the data is images and most of these image have two directory entries i.e.
+> there is a hard link to each file. If I copy them using cp -a or my usual
+> favourite of find .|cpio -pmd other_dir it's going to copy each file twice,
+> which is not what I want. dump / restore would take care of this if the
+> source filesystem wasn't reiserfs :-( Any suggestions ?
+> 
+> 
+> Niall
+> 
+> -- 
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+> List maintainer: listmaster@linux.ie
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 15:05:54 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D6F9743FAD
+	for <jm@localhost>; Fri, 19 Jul 2002 10:05:39 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 15:05:39 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JE52J02557 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 15:05:02 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA08480; Fri, 19 Jul 2002 15:00:57 +0100
+Received: from linux.local ([195.218.108.86]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA08447 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 15:00:49 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.86] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6JE0CX02325 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 15:00:12 +0100
+Message-Id: <200207191400.g6JE0CX02325@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+In-Reply-To: Message from Niall O Broin <niall@linux.ie> of
+    "Fri, 19 Jul 2002 14:28:42 BST."
+    <20020719132842.GA2506@bagend.makalumedia.com>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <2322.1027087211.1@linux.local>
+Date: Fri, 19 Jul 2002 15:00:12 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    PAA08447
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Fri, 19 Jul 2002 14:28:42 +0100
+  | From: Niall O Broin <niall@linux.ie>
+  | 
+  | I have about 60G of data which I need to copy from one disk
+  | to another.  However, I'm not sure how I should best copy it.
+  | The problem is the bulk of the data is images and most of these
+  | image have two directory entries i.e. there is a hard link to
+  | each file.  If I copy them using cp -a or my usual favourite of
+  | find .|cpio -pmd other_dir  it's going to copy each file twice,
+  | which is not what I want. dump / restore would take care of this
+  | if the source filesystem wasn't reiserfs  :-(  Any suggestions ?
+
+ do your (and my) favourite, it'll be Ok:
+
+  1. cpio(1) preserves hard links, i.e., if F1 and F2 are
+     hard-linked and both are "copied", then the "copies"
+     are also hard-linked.  this is true of all `cpio's
+     (and `tar' and any other decent/usable archival tool,
+     by definition (IMHO)).
+
+  2. `cpio -p' (at least `GNU cpio version 2.4.2') will only
+     read/write (copy) the actual data bytes once.  I _think_
+     this is true for all `cpio's (not just that GNU version),
+     but am not certain.
+
+ if you use an intermediate archive, e.g.:
+
+    cpio -o ... >file;   ...;   cpio -i ... <file
+
+ then the actual data bytes are copied into the archive (file)
+ under each name (e.g., as both F1 and F2).  but GNU `cpio' is
+ smart about this in pass-through mode (`-p'), copying the data
+ just once (or so I read the source).
+
+cheers!
+	-blf-
+
+p.s. assuming this is a one-time operation that you won't repeat
+    anytime soon (e.g., never; i.e., time isn't a major issue),
+    and are not using any intermediate media/file (so storage
+    isn't an issue), then even if `cpio' did read the data twice,
+    so what? --- as long as, of course, it re-creates the hard
+    links.  which it will.
+
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 15:29:27 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7050843FAD
+	for <jm@localhost>; Fri, 19 Jul 2002 10:29:25 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 15:29:25 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JER8J04398 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 15:27:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA09644; Fri, 19 Jul 2002 15:26:17 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp016.mail.yahoo.com (smtp016.mail.yahoo.com
+    [216.136.174.113]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id PAA09619
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 15:26:10 +0100
+Received: from unknown (HELO mfrenchw2k) (mfrench42@62.254.163.42 with
+    login) by smtp.mail.vip.sc5.yahoo.com with SMTP; 19 Jul 2002 14:26:07
+    -0000
+Message-Id: <003301c22f2f$b722ba30$3864a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: <ilug@linux.ie>
+References: <20020719132842.GA2506@bagend.makalumedia.com>
+Subject: Re: [ILUG] How to copy some files
+Date: Fri, 19 Jul 2002 15:22:26 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Niall asked:
+> I have about 60G of data which I need to copy from one disk to another.
+> However, I'm not sure how I should best copy it. The problem is the bulk
+of
+> the data is images and most of these image have two directory entries i.e.
+> there is a hard link to each file. If I copy them using cp -a or my usual
+> favourite of find .|cpio -pmd other_dir it's going to copy each file
+twice,
+> which is not what I want. dump / restore would take care of this if the
+> source filesystem wasn't reiserfs :-( Any suggestions ?
+
+How about something like:
+
+cd {dest.dir}
+tar -C {source.dir} cf - | tar xf -
+
+tar cf - will pipe the tar file to stdout and tar xf - will untar it. This
+should keep permissions and links, and if you do it as root you will keep
+the owners too... :)
+
+Not tested, though. You may need other flags as well.
+
+- Matthew
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.comm
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 15:40:36 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 248A043FAD
+	for <jm@localhost>; Fri, 19 Jul 2002 10:40:35 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 15:40:35 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JEZeJ05090 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 15:35:40 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA10057; Fri, 19 Jul 2002 15:31:50 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id PAA10024
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 15:31:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts15-233.dublin.indigo.ie
+    [194.125.176.233]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    3FB81F8E6 for <ilug@linux.ie>; Fri, 19 Jul 2002 15:16:38 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    838F43C0CC; Fri, 19 Jul 2002 15:35:36 +0100 (IST)
+Date: Fri, 19 Jul 2002 15:35:36 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Message-Id: <20020719143536.GC2506@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.27i
+Subject: [ILUG] OSI protocol
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+There's been some discussion just now on the ILUG IRC channel about OSI and
+protocol layers. This reminded me of a poster produced by Wandel &
+Goltermann (manufactureres of fine protocol decoders and testers) which
+illustrates this admirably. The poster is in the form of a PDF file and to
+be honest, is best appreciated if you have access to a HP DesignJet or
+somesuch device. Wandel & Goltermann has now become/been taken over by
+acterna and I couldn't find the poster there. However, it's available at
+http://www.pb.bib.de/~dozloh/fachinfo/sdn_16/decodes.pdf and some of you ma
+find it interesting.
+
+The top of the poster refers you to www.decodes.com for a more up to date
+online copy of the poster. However, www.decodes.com now is redirected to the
+aforementioned acterna and . . . .
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 16:13:14 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 39503440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 11:13:14 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:13:14 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JF8QJ07360 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 16:08:26 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA11494; Fri, 19 Jul 2002 16:04:53 +0100
+Received: from mail.tradesignals.com ([217.75.2.27]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA11457 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 16:04:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [217.75.2.27] claimed to
+    be mail.tradesignals.com
+Received: from docaoimh.tradesignals.com (docaoimh.tradesignals.com
+    [192.168.1.26]) by mail.tradesignals.com (8.11.6/8.11.6) with ESMTP id
+    g6JF4Y111154 for <ilug@linux.ie>; Fri, 19 Jul 2002 16:04:34 +0100
+Received: from localhost (localhost [[UNIX: localhost]]) by
+    docaoimh.tradesignals.com (8.11.6/8.11.6) id g6JF4Zb21672 for
+    ilug@linux.ie; Fri, 19 Jul 2002 16:04:35 +0100
+Content-Type: text/plain; charset="us-ascii"
+From: Donncha O Caoimh <donncha.ocaoimh@tradesignals.com>
+To: ilug@linux.ie
+Date: Fri, 19 Jul 2002 16:04:34 +0100
+X-Mailer: KMail [version 1.4]
+MIME-Version: 1.0
+Message-Id: <200207191604.34890.donncha.ocaoimh@tradesignals.com>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    QAA11457
+Subject: [ILUG] app of the day - Spackle
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+http://spackle.xidus.net/info.php
+
+>From the website:
+"Spackle is designed to be a flexible client/server architecture for the 
+gathering and displaying of statistics, primarily suited to monitoring 
+servers. It's written in PHP and bash shell script, uses RRDtool  for stats 
+logging, and PostgreSQL for the server-side database. (soon to support MySQL 
+as well)"
+
+I had this up and running within a few hours. The hardest bit was getting 
+PostgreSQL running as it's been a few years since I used it. I had a bit of a 
+problem getting it to work on rh6.2 boxes but I documented the changes here: 
+http://xeer.blogspot.com/?/2002_07_01_xeer_archive.html#79148596
+
+Web interface is simple, but functional. It has a simple way of distributing 
+the monitoring scripts (which could be compromised but I digress), and the 
+resulting graphs are pretty!
+
+Donncha.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 16:13:14 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AAE0D440C9
+	for <jm@localhost>; Fri, 19 Jul 2002 11:13:14 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:13:14 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JFBCJ07539 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 16:11:12 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA11755; Fri, 19 Jul 2002 16:10:33 +0100
+Received: from lhidns.gov.ie ([193.1.228.222]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA11727 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 16:10:26 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [193.1.228.222] claimed to
+    be lhidns.gov.ie
+Received: from gw.educ.irlgov.ie (educ-gw.gov.ie [192.168.6.1] (may be
+    forged)) by lhidns.gov.ie (8.9.3/8.9.3) with ESMTP id QAA25600 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 16:09:51 +0100
+Received: (from fwtk@localhost) by gw.educ.irlgov.ie (8.8.6/8.8.6) id
+    RAA04262 for <ilug@linux.ie>; Fri, 19 Jul 2002 17:29:21 +0100 (BST)
+Received: from unknown(10.0.0.13) by gw.educ.irlgov.ie via smap (V2.0) id
+    xma004255; Fri, 19 Jul 02 17:29:18 +0100
+Content-Class: urn:content-classes:message
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Subject: RE: [ILUG] OSI protocol
+X-Mimeole: Produced By Microsoft Exchange V6.0.5762.3
+Date: Fri, 19 Jul 2002 16:09:50 +0100
+Message-Id: <9C498074D5419A44B05349F5BF2C26301CFA3C@sdubtalex01.education.gov.ie>
+X-MS-Has-Attach: 
+X-MS-Tnef-Correlator: 
+Thread-Topic: [ILUG] OSI protocol
+Thread-Index: AcIvMUWcPHFhWEzbQb2IY/9SQjTTswABPM0A
+From: "Ryan, Shane" <Shane_Ryan@education.gov.ie>
+To: <ilug@linux.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    QAA11727
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Hi,
+
+I wasn't sure if that ever started up.
+what irc server is #ilug on?
+
+Regards,
+Shane
+
+-----Original Message-----
+From: Niall O Broin [mailto:niall@linux.ie]
+Sent: 19 July 2002 15:36
+To: ilug@linux.ie
+Subject: [ILUG] OSI protocol
+
+
+There's been some discussion just now on the ILUG IRC channel about OSI and
+protocol layers. This reminded me of a poster produced by Wandel &
+Goltermann (manufactureres of fine protocol decoders and testers) which
+illustrates this admirably. The poster is in the form of a PDF file and to
+be honest, is best appreciated if you have access to a HP DesignJet or
+somesuch device. Wandel & Goltermann has now become/been taken over by
+acterna and I couldn't find the poster there. However, it's available at
+http://www.pb.bib.de/~dozloh/fachinfo/sdn_16/decodes.pdf and some of you ma
+find it interesting.
+
+The top of the poster refers you to www.decodes.com for a more up to date
+online copy of the poster. However, www.decodes.com now is redirected to the
+aforementioned acterna and . . . .
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 16:19:05 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 0E270440C9
+	for <jm@localhost>; Fri, 19 Jul 2002 11:19:05 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:19:05 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JFIMJ08096 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 16:18:22 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA12323; Fri, 19 Jul 2002 16:16:35 +0100
+Received: from linux.local ([195.218.108.192]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA12284 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 16:16:25 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.192] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6JFFnX02981 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 16:15:49 +0100
+Message-Id: <200207191515.g6JFFnX02981@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+In-Reply-To: Message from
+    "Matthew French"
+    <mfrench42@yahoo.co.uk> of
+    "Fri, 19 Jul 2002 15:22:26 BST."
+    <003301c22f2f$b722ba30$3864a8c0@sabeo.ie>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <2978.1027091749.1@linux.local>
+Date: Fri, 19 Jul 2002 16:15:49 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    QAA12284
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Fri, 19 Jul 2002 15:22:26 +0100
+  | From: "Matthew French" <mfrench42@yahoo.co.uk>
+  | 
+  | Niall asked:
+  |  > I have about 60G of data which I need to copy from one disk to
+  |  > another.  [ ... ] The problem is the bulk of the data [ ... ]
+  |  > have two directory entries i.e. there is a hard link [ ... ]
+  | 
+  | How about something like:
+  | 
+  |    cd {dest.dir}
+  |    tar -C {source.dir} cf - | tar xf -
+  | 
+  | tar cf - will pipe the tar file to stdout and tar xf - will untar it. This
+  | should keep permissions and links, and if you do it as root you will keep
+  | the owners too... :)
+  | 
+  | Not tested, though. You may need other flags as well.
+
+ the above (or something close to it) will work.
+
+ however, the data will be read and written twice by the
+ 1st (source) `tar', and read twice by the 2nd (sink) `tar',
+ albeit only written once as the sink realizes the second
+ copy is a hard link to the first.  with c.60Gb of data,
+ that will make a difference, at least in time and CPU
+ resource consumed (albeit, in this case, not storage).
+
+ the issue here is tar(1) (and cpio(1)) archives always
+ contain the data for each name of a hard link.  this is
+ (probably) for several reasons, and is not necessarily a
+ bad thing.   e.g., it provides a degree of redundancy to
+ help cope with bad media.
+
+ the source `tar' is creating an archive, which is being
+ written down the pipe (to be consumed by the sink `tar').
+ that is why storage is not an issue per se here, as the
+ full archive is not "saved" --- if it were, you'd need
+ at least 2x60Gb, or over 120Gb!   (the extra is `tar's
+ overhead, which is minimal but does add up, esp. when
+ a "large" blocking factor is used.)
+
+cheers!
+	-blf-
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 16:19:04 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9C13C440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 11:19:04 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 16:19:04 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JFGgJ08019 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 16:16:42 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id QAA12249; Fri, 19 Jul 2002 16:16:02 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from holly.csn.ul.ie (holly.csn.ul.ie [136.201.105.4]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id QAA12205 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 16:15:56 +0100
+Received: from skynet.csn.ul.ie (skynet [136.201.105.2]) by
+    holly.csn.ul.ie (Postfix) with ESMTP id BA52C2B338 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 16:15:25 +0100 (IST)
+Received: by skynet.csn.ul.ie (Postfix, from userid 2196) id AB655E95A;
+    Fri, 19 Jul 2002 16:15:25 +0100 (IST)
+Date: Fri, 19 Jul 2002 16:15:25 +0100
+From: Stephen Shirley <diamond@skynet.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] OSI protocol
+Message-Id: <20020719151524.GA4437@skynet.ie>
+Mail-Followup-To: ilug@linux.ie
+References: <9C498074D5419A44B05349F5BF2C26301CFA3C@sdubtalex01.education.gov.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <9C498074D5419A44B05349F5BF2C26301CFA3C@sdubtalex01.education.gov.ie>
+User-Agent: Mutt/1.3.24i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 04:09:50PM +0100, Ryan, Shane wrote:
+> Hi,
+> 
+> I wasn't sure if that ever started up.
+> what irc server is #ilug on?
+> 
+
+#linux on irc.linux.ie
+
+Steve
+-- 
+"Oh look, it's the Pigeon of Love."
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 17:14:50 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id DFFF9440C9
+	for <jm@localhost>; Fri, 19 Jul 2002 12:14:46 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 17:14:46 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JGEGJ13178 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 17:14:16 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA14596; Fri, 19 Jul 2002 17:10:48 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp015.mail.yahoo.com (smtp015.mail.yahoo.com
+    [216.136.173.59]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id RAA14558
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 17:10:41 +0100
+Received: from unknown (HELO mfrenchw2k) (mfrench42@62.254.163.42 with
+    login) by smtp.mail.vip.sc5.yahoo.com with SMTP; 19 Jul 2002 16:10:38
+    -0000
+Message-Id: <00a701c22f3e$51120b10$3864a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: "Irish Linux Users Group" <ilug@linux.ie>
+References: <200207191515.g6JFFnX02981@linux.local>
+Subject: Re: [ILUG] How to copy some files
+Date: Fri, 19 Jul 2002 17:06:59 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Brian wrote:
+>  however, the data will be read and written twice by the
+>  1st (source) `tar', and read twice by the 2nd (sink) `tar',
+>  albeit only written once as the sink realizes the second
+>  copy is a hard link to the first.
+
+Eh?!? Oh wait... <pause while original mail is re-read>
+
+Doh. Sorry, I automatically read 'soft' in front of 'links', despite all
+evidence to the contrary. I thought the original question was a bit
+strange...
+
+On that note: is there any real benefit to using hard links? I avoid them as
+a rule, and cannot think of any good reason to use them at the moment.
+
+- Matthew
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.comm
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 17:37:22 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E8598440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 12:37:21 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 17:37:21 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JGZ8J14867 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 17:35:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id RAA15508; Fri, 19 Jul 2002 17:33:59 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id RAA15484
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 17:33:53 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts14-238.dublin.indigo.ie
+    [194.125.175.238]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    CA3E3F8E3 for <ilug@linux.ie>; Fri, 19 Jul 2002 17:18:46 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    307703C0FC; Fri, 19 Jul 2002 17:28:40 +0100 (IST)
+Date: Fri, 19 Jul 2002 17:28:40 +0100
+From: Niall O Broin <niall@linux.ie>
+To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+Message-Id: <20020719162840.GA3325@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>,
+	Irish Linux Users Group <ilug@linux.ie>
+References: <200207191515.g6JFFnX02981@linux.local>
+    <00a701c22f3e$51120b10$3864a8c0@sabeo.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <00a701c22f3e$51120b10$3864a8c0@sabeo.ie>
+User-Agent: Mutt/1.3.27i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 05:06:59PM +0100, Matthew French wrote:
+
+> On that note: is there any real benefit to using hard links? I avoid them as
+> a rule, and cannot think of any good reason to use them at the moment.
+
+There are lots of benefits to using hard links, for all sorts of reasons. In
+this case, they are being used to provide two quite different namespaces
+for the same set of files.
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 18:33:25 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id EDE72440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 13:33:23 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 18:33:23 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JHUqJ19009 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 18:30:52 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA23681; Fri, 19 Jul 2002 18:30:29 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail01.svc.cra.dublin.eircom.net
+    (mail01.svc.cra.dublin.eircom.net [159.134.118.17]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id SAA23654 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 18:30:22 +0100
+Message-Id: <200207191730.SAA23654@lugh.tuatha.org>
+Received: (qmail 61897 messnum 162506 invoked from
+    network[159.134.159.212/p468.as1.drogheda1.eircom.net]); 19 Jul 2002
+    17:29:51 -0000
+Received: from p468.as1.drogheda1.eircom.net (HELO there)
+    (159.134.159.212) by mail01.svc.cra.dublin.eircom.net (qp 61897) with SMTP;
+    19 Jul 2002 17:29:51 -0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: John Gay <johngay@eircom.net>
+To: ilug@linux.ie
+Subject: Re: [ILUG] CVS question?
+Date: Thu, 18 Jul 2002 23:13:24 +0100
+X-Mailer: KMail [version 1.3.2]
+References: <200207172008.VAA08579@lugh.tuatha.org>
+    <15669.54302.782580.434395@klortho.waider.ie>
+In-Reply-To: <15669.54302.782580.434395@klortho.waider.ie>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Well, as many have said, it's non-trivial and not smart enough.
+
+I did try just cvs'ing over the existing sources, but cvs complained that my 
+files were in the way.
+
+Then I thought that I'd only need the DRI stuff, that took about 1.5 hours to 
+fetch 116M. Unfortunately I still need the XFree86 cvs stuff as well :-( At 
+339M that took almost 3 hours.
+
+Now I can start building the XFree86 cvs and DRI cvs stuff for testing the 3D 
+patches for my GVX1 card. I just hope I don't completely trash my system in 
+the process. 
+
+Think I'll wait until morning to start building, though. I've been building a 
+new box from source this week. A 200Mhz PentiumMMX with 96M. It took a full 
+day to build XFree86 4.2.0 and 2.5 days each to build qtlibs and kdelibs. 
+kdebase took just under 46 hours. I've got lots of grief from the wife for 
+the computer running 'round the clock this week. The rest of KDE should build 
+in under 20 hour increments.
+
+Cheers,
+
+	John Gay
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 18:33:29 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id B8970440C9
+	for <jm@localhost>; Fri, 19 Jul 2002 13:33:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 18:33:28 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JHVfJ19051 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 18:31:41 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA22739; Fri, 19 Jul 2002 18:10:53 +0100
+Received: from marklar.elive.net (smtp.elive.ie [212.120.138.41]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA22715 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 18:10:48 +0100
+Received: from gonzo.waider.ie
+    (IDENT:8rQlPXWuJKuu3dmQqyedgkXDs573N75B@1Cust219.tnt1.dub2.ie.uudial.net
+    [213.116.40.219]) by marklar.elive.net (8.11.6/8.11.6) with ESMTP id
+    g6JGkuj09232 for <ilug@linux.ie>; Fri, 19 Jul 2002 17:47:01 +0100
+Received: from klortho.waider.ie
+    (IDENT:fqZjcglU1vS7HxIilFH5W/XbUYkOuyja@klortho.waider.ie [10.0.0.100]) by
+    gonzo.waider.ie (8.11.6/8.11.6) with ESMTP id g6JHAat28586 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 18:10:36 +0100
+Received: (from waider@localhost) by klortho.waider.ie (8.11.6/8.11.6) id
+    g6JHAe711032; Fri, 19 Jul 2002 18:10:40 +0100
+X-Authentication-Warning: klortho.waider.ie: waider set sender to
+    waider@waider.ie using -f
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15672.18448.462171.646227@klortho.waider.ie>
+Date: Fri, 19 Jul 2002 18:10:40 +0100
+From: Ronan Waide <waider@waider.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] How to copy some files
+In-Reply-To: <20020719162840.GA3325@bagend.makalumedia.com>
+References: <200207191515.g6JFFnX02981@linux.local>
+    <00a701c22f3e$51120b10$3864a8c0@sabeo.ie>
+    <20020719162840.GA3325@bagend.makalumedia.com>
+X-Mailer: VM 7.07 under Emacs 21.2.1
+Organization: poor at best.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On July 19, niall@linux.ie said:
+> 
+> There are lots of benefits to using hard links, for all sorts of reasons. In
+
+"...but there is insufficient room in the margin of this email to
+ describe them..." :)
+
+> this case, they are being used to provide two quite different namespaces
+> for the same set of files.
+
+Sure, but soft links would do the same. To be honest, I'm trying to
+think of a useful use of hard links right now, and I'm a little
+stumped. There's gotta be some benefit that I'm missing that's
+immediately obvious to everyone.
+
+Cheers,
+Waider.
+-- 
+waider@waider.ie / Yes, it /is/ very personal of me.
+
+merde says, "in other news, our mini-blimp blew away."
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 20:58:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7EED2440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 15:58:00 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 20:58:00 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JJvSJ30546 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 20:57:28 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id UAA28485; Fri, 19 Jul 2002 20:48:47 +0100
+Received: from claymore.diva.ie (diva.ie [195.218.115.17] (may be forged))
+    by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id UAA28456 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 20:48:41 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host diva.ie [195.218.115.17]
+    (may be forged) claimed to be claymore.diva.ie
+Received: from localhost (claymore [195.218.115.17]) by claymore.diva.ie
+    (8.9.3/8.9.3) with ESMTP id UAA24846 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 20:48:40 +0100
+Received: from 194.125.134.71 ( [194.125.134.71]) as user
+    rcunniff@mail.boxhost.net by webmail.gameshrine.com with HTTP;
+    Fri, 19 Jul 2002 20:48:40 +0100
+Message-Id: <1027108120.3d386d180910a@webmail.gameshrine.com>
+Date: Fri, 19 Jul 2002 20:48:40 +0100
+From: Ronan Cunniffe <ronan@cunniffe.net>
+To: ilug@linux.ie
+Subject: Re: [ILUG] How to copy some files
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-15
+Content-Transfer-Encoding: 8bit
+User-Agent: Internet Messaging Program (IMP) 3.0
+X-Originating-Ip: 194.125.134.71
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Quoting Ronan Waide <waider@waider.ie>:
+
+> Sure, but soft links would do the same. To be honest, I'm trying to
+> think of a useful use of hard links right now, and I'm a little
+> stumped. There's gotta be some benefit that I'm missing that's
+> immediately obvious to everyone.
+
+Using Niall's example - single set of files but >1 namespace, and suppose that
+you want to delete some items from the set according to rules applied to the
+namespaces.  With soft links you need an *extra* namespace the others refer to,
+and after filtering the namespaces, you have to do a manual reference count to
+decide what goes and what stays.  With hard links, you just unlink and deletion
+is automatic.
+
+Ronan.
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 21:03:25 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4DBF1440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 16:03:25 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 21:03:25 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JK2TJ30883 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 21:02:29 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA29178; Fri, 19 Jul 2002 21:01:58 +0100
+Received: from linux.local ([195.218.108.203]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA29146 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 21:01:37 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.203] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6JJgJX04327 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 20:42:19 +0100
+Message-Id: <200207191942.g6JJgJX04327@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] CORRECTION - How to copy some files
+In-Reply-To: Message from Brian Foster <blf@utvinternet.ie> of
+    "Fri, 19 Jul 2002 16:15:49 BST."
+    <200207191515.g6JFFnX02981@linux.local>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <4324.1027107739.1@linux.local>
+Date: Fri, 19 Jul 2002 20:42:19 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    VAA29146
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Fri, 19 Jul 2002 16:15:49 +0100
+  | From: Brian Foster <blf@utvinternet.ie>
+  |[ ... ]
+  |  the issue here is tar(1) (and cpio(1)) archives always
+  |  contain the data for each name of a hard link.  [ ... ]
+
+ ARRGGGHHHH!!!!!
+ profuse apologies, the wrong version of my reply was posted
+ (blame it on being late for the pub).  ;-(
+
+ the above is almost pure B*S* --- I got my `tar's and `cpio's
+ confused.  what I said _is_ correct, but for cpio(1) archives;
+ tar(1) archives do _not_ replicate the data for hard links.
+
+ I spotted this confusion on my part before I posted my reply,
+ and re-wrote it to be more correct, yet somehow the wrong
+ version got sent anyways.  ARRGGGHHHH!!!!!  ;-(  ;-(  ;-(
+
+ anyways, GNU `cpio -p' does not do spurious reads or writes.
+ GNU `tar cf - ... | tar xf - ...' also does not, albeit each
+ `tar' both reads and writes the data.  hence, there is twice
+ (not thrice!) the I/O of `cpio -p', maybe an issue for c.60Gb.
+
+ using strace(1), I've verified my claim GNU `cpio -p' does
+ not do spurious reads or writes, i.e. it link(2)s.  but having
+ just come back from the pub, perhaps this should also be taken
+ with extra skepticism ......   ;-\ 
+
+sorry.  cheers!
+	-blf-
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 21:08:49 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 23851440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 16:08:49 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 21:08:49 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JK43J31258 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 21:04:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA29257; Fri, 19 Jul 2002 21:02:24 +0100
+Received: from linux.local ([195.218.108.203]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA29182 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 21:01:59 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [195.218.108.203] claimed
+    to be linux.local
+Received: from linux.local (localhost [127.0.0.1]) by linux.local
+    (8.11.6/8.11.6/SuSE Linux 0.5) with ESMTP id g6JJxHX04486 for
+    <ilug@linux.ie>; Fri, 19 Jul 2002 20:59:17 +0100
+Message-Id: <200207191959.g6JJxHX04486@linux.local>
+To: Irish Linux Users Group <ilug@linux.ie>
+Reply-To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] hard- vs. soft-links [was: How to copy some files ]
+In-Reply-To: Message from Ronan Waide <waider@waider.ie> of
+    "Fri, 19 Jul 2002 18:10:40 BST."
+    <15672.18448.462171.646227@klortho.waider.ie>
+X-Mailer: [nmh-1.0.4] MH.6.8, SuSE Linux 7.3
+X-Url: http://www.blf.utvinternet.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Id: <4483.1027108757.1@linux.local>
+Date: Fri, 19 Jul 2002 20:59:17 +0100
+From: Brian Foster <blf@utvinternet.ie>
+Content-Transfer-Encoding: 8bit
+X-MIME-Autoconverted: from quoted-printable to 8bit by lugh.tuatha.org id
+    VAA29182
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+  | Date: Fri, 19 Jul 2002 18:10:40 +0100
+  | From: Ronan Waide <waider@waider.ie>
+  | 
+  | On July 19, niall@linux.ie said:
+  | > this case, [hard links] are being used to provide two quite
+  | > different namespaces for the same set of files.
+  | 
+  | Sure, but soft links would do the same. To be honest, I'm trying to
+  | think of a useful use of hard links right now, and I'm a little
+  | stumped. There's gotta be some benefit that I'm missing that's
+  | immediately obvious to everyone.
+
+ maybe, maybe not.   yonks ago, I seem to recall dmr saying,
+ or at least alleged to have said, something along the lines
+ that soft and hard links both make sense in isolation, but
+ having both does not.  if this is even close to correct,
+ yer in quite good company!
+
+ there is at least one notable difference, and a host of minor
+ ones.  the notable difference is the data always exists (and
+ is apriori accessible) for hard links --- there is no such
+ thing as a broken link.
+
+ I use this fact on occasion to "save" data, via the well-
+ known attack of hard-linking to a supposedly-temporary file
+ I want to preserve.  the subsequent unlink(2)ing of the
+ "temporary" file does not destroy the data.
+ 
+cheers!
+	-blf-
+--
+ Innovative, very experienced, Unix and      | Brian Foster    Dublin, Ireland
+ Chorus (embedded RTOS) kernel internals     | e-mail: blf@utvinternet.ie
+ expert looking for a new position ...       | mobile: (+353 or 0)86 854 9268
+  For a résumé, contact me, or see my website  http://www.blf.utvinternet.ie
+
+    Stop E$$o (ExxonMobile):  «Whatever you do, don't buy Esso --- they
+     don't give a damn about global warming.»    http://www.stopesso.com
+     Supported by Greenpeace, Friends of the Earth, and numerous others...
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 22:02:34 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id AF272440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 17:02:34 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 22:02:34 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JL14J03167 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 22:01:04 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id VAA32339; Fri, 19 Jul 2002 21:53:52 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail04.svc.cra.dublin.eircom.net
+    (mail04.svc.cra.dublin.eircom.net [159.134.118.20]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id VAA32306 for <ilug@linux.ie>; Fri,
+    19 Jul 2002 21:53:46 +0100
+From: awhalley@eircom.net
+Message-Id: <200207192053.VAA32306@lugh.tuatha.org>
+Received: (qmail 1866 messnum 187485 invoked from
+    network[159.134.237.78/wendell.eircom.net]); 19 Jul 2002 20:53:16 -0000
+Received: from wendell.eircom.net (HELO webmail.eircom.net)
+    (159.134.237.78) by mail04.svc.cra.dublin.eircom.net (qp 1866) with SMTP;
+    19 Jul 2002 20:53:16 -0000
+To: ilug@linux.ie
+Date: Fri, 19 Jul 2002 21:53:16 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 8bit
+X-Originating-Ip: 194.165.172.215
+X-Mailer: Eircom Net CRC Webmail (http://www.eircom.net/)
+Organization: Eircom Net (http://www.eircom.net/)
+Subject: [ILUG] [OT] GPL & PHP Question
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Could anyone who is interested clarify this for me.
+Or point me in the direction of a site that does GPL case studies where there may be a similar issue. I have had a google around and the PHP site wasn't help full and the GPL page didn't seem to have this senario.
+
+The setup is as follows:
+I develop a piece of code using PHP 3.0.9 which is, to
+my knowledge, GPL. 
+
+The piece of code runs on my server and is an integral part of a system that I have developed for a client. I did not recieve  payment for this particular piece of code but I did recieve payment for the system. My client now wants to  
+use a different service provider but keep my code. 
+Do I have a right to claim intellectual property rights for  my little piece of code that he did not pay me for or do I have to give the client the code under the GPL.
+
+I know this is not strictly a 'Linux' issue but any help would be appreciated
+
+Ant
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 22:07:58 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 05F8C440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 17:07:58 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 22:07:58 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JL51J03608 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 22:05:01 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA00409; Fri, 19 Jul 2002 22:04:03 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from smtp011.mail.yahoo.com (smtp011.mail.yahoo.com
+    [216.136.173.31]) by lugh.tuatha.org (8.9.3/8.9.3) with SMTP id WAA00377
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 22:03:55 +0100
+Received: from p256.as1.cra.dublin.eircom.net (HELO mfrenchw2k)
+    (mfrench42@159.134.177.0 with login) by smtp.mail.vip.sc5.yahoo.com with
+    SMTP; 19 Jul 2002 21:03:45 -0000
+Message-Id: <002c01c22f67$4216c280$f264a8c0@sabeo.ie>
+From: "Matthew French" <mfrench42@yahoo.co.uk>
+To: "Irish Linux Users Group" <ilug@linux.ie>
+References: <200207191959.g6JJxHX04486@linux.local>
+Subject: Re: [ILUG] hard- vs. soft-links [was: How to copy some files ]
+Date: Fri, 19 Jul 2002 22:00:02 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2600.0000
+X-Mimeole: Produced By Microsoft MimeOLE V6.00.2600.0000
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Brian Foster wrote:
+>  I use this fact on occasion to "save" data, via the well-
+>  known attack of hard-linking to a supposedly-temporary file
+>  I want to preserve.  the subsequent unlink(2)ing of the
+>  "temporary" file does not destroy the data.
+
+Now here is a thought: a Unix version of the "Deleted Items" folder.
+
+In the root of a hard drive, create a directory ".unwanted". Then
+periodically create hard links to every file on the hard drive that does not
+have hard links.
+
+That way, when someone accidentally does "rm *" or whatever, you still have
+a link under ".unwanted"
+
+Another script can then periodically clear out enough old files to ensure
+that there is usually enough disk space.
+
+Although this sounds like a horrible hack. It would no doubt be much better
+to have a transaction oriented file system with a rollback facility.  :)
+
+- Matthew
+
+
+__________________________________________________
+Do You Yahoo!?
+Everything you'll ever need on one web page
+from News and Sport to Email and Music Charts
+http://uk.my.yahoo.comm
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 23:06:51 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id BEF3D440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 18:06:51 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 23:06:51 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JM3FJ07895 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 23:03:15 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id WAA02765; Fri, 19 Jul 2002 22:57:34 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id WAA02652
+    for <ilug@linux.ie>; Fri, 19 Jul 2002 22:57:11 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts10-040.dublin.indigo.ie
+    [194.125.174.167]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    9B09BF8FD for <ilug@linux.ie>; Fri, 19 Jul 2002 22:42:04 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    DE8C53C167; Fri, 19 Jul 2002 19:42:19 +0100 (IST)
+Date: Fri, 19 Jul 2002 19:42:19 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] CVS question?
+Message-Id: <20020719184219.GA3854@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+References: <200207172008.VAA08579@lugh.tuatha.org>
+    <15669.54302.782580.434395@klortho.waider.ie>
+    <200207191730.SAA23654@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <200207191730.SAA23654@lugh.tuatha.org>
+User-Agent: Mutt/1.3.27i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Thu, Jul 18, 2002 at 11:13:24PM +0100, John Gay wrote:
+
+> kdebase took just under 46 hours. I've got lots of grief from the wife for 
+> the computer running 'round the clock this week. The rest of KDE should build 
+
+Tell her that the computer is less likely to fail if it's never turned off
+so you won't need to be spending money on repairs, and that this offsets the
+electricity costs.
+
+This has the advantage of actually being true (well, up to the , anyway) :-)
+
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 23:39:02 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A5D36440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 18:39:02 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 23:39:02 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JMbEJ10513 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 23:37:14 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA04163; Fri, 19 Jul 2002 23:30:46 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA04129 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 23:30:40 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6JMUc913377 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 23:30:38 +0100
+Date: Fri, 19 Jul 2002 23:30:36 +0100
+To: Matthew French <mfrench42@yahoo.co.uk>
+Cc: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] hard- vs. soft-links [was: How to copy some files ]
+Message-Id: <20020719233036.B12390@ie.suberic.net>
+References: <200207191959.g6JJxHX04486@linux.local>
+    <002c01c22f67$4216c280$f264a8c0@sabeo.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <002c01c22f67$4216c280$f264a8c0@sabeo.ie>; from
+    mfrench42@yahoo.co.uk on Fri, Jul 19, 2002 at 10:00:02PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027549838.74d3af@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 10:00:02PM +0100, Matthew French wrote:
+> Now here is a thought: a Unix version of the "Deleted Items" folder.
+
+am i the only one who thinks this is like "friday night 80's" for ilug?
+and here's an answer from 1989.  for those perceptive folks in the
+audience you'll note that it makes no reference to a windows icons.
+
+http://groups.google.com/groups?q=unix+undelete&hl=en&lr=&ie=UTF-8&as_drrb=b&as_mind=12&as_minm=5&as_miny=1981&as_maxd=19&as_maxm=7&as_maxy=1989&selm=10113%40bloom-beacon.MIT.EDU&rnum=10
+
+and here's one from 1984:
+
+http://groups.google.com/groups?q=unix+undelete&start=10&hl=en&lr=&ie=UTF-8&as_drrb=b&as_mind=12&as_minm=5&as_miny=1981&as_maxd=19&as_maxm=7&as_maxy=1989&selm=736%40sri-arpa.UUCP&rnum=14
+
+on a more serious note....  would unrm be nice?  yeah.  but people have
+talked about unrm for nearly ***20*** years - and that's just what i
+bothered to look up.  think about it.  in that time bsd has been freed
+from at&t and then forked in four different directions, gcc, linux,
+mozilla, gnome and kde have been written.  as has almost every bit
+of the gnu project - including (sh|file)-utils.  and think about it,
+have the gnu (sh|file)-utils developers ever met an option they didn't
+implement if they could?  even /bin/true and /bin/false take arguments.
+
+so yeah, unrm would be nice, but obviously it's not a simple problem.
+millions of lines of code, hundreds of projects, no unrm.  heck, the
+hurd will probably release 1.0 before unrm shows up.
+
+kevin, spinning the oldies all night long...
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Fri Jul 19 23:44:22 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A9428440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 18:44:22 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Fri, 19 Jul 2002 23:44:22 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JMhqJ11092 for
+    <jm-ilug@jmason.org>; Fri, 19 Jul 2002 23:43:52 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA04704; Fri, 19 Jul 2002 23:42:51 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA04679 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 23:42:44 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6JMgh913562 for <ilug@linux.ie>;
+    Fri, 19 Jul 2002 23:42:43 +0100
+Date: Fri, 19 Jul 2002 23:42:41 +0100
+To: awhalley@eircom.net
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] [OT] GPL & PHP Question
+Message-Id: <20020719234241.C12390@ie.suberic.net>
+References: <200207192053.VAA32306@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <200207192053.VAA32306@lugh.tuatha.org>; from
+    awhalley@eircom.net on Fri, Jul 19, 2002 at 09:53:16PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027550563.01c64c@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 09:53:16PM +0100, awhalley@eircom.net wrote:
+> The setup is as follows:
+> I develop a piece of code using PHP 3.0.9 which is, to
+> my knowledge, GPL. 
+
+php's license is completely irrelevant to this.  think about it.
+solaris releases their system which includes /bin/sh.  their license
+is very restrictive and they retain the rights to their whole system.
+but they don't own every shell script ever written by solaris admins
+around the world.
+
+> The piece of code runs on my server and is an integral part of a system
+> that I have developed for a client. I did not recieve  payment for this
+> particular piece of code but I did recieve payment for the system. My
+> client now wants to use a different service provider but keep my code.
+> Do I have a right to claim intellectual property rights for  my little
+> piece of code that he did not pay me for or do I have to give the
+> client the code under the GPL.
+
+i doubt it.  and i suspect it would cost more to litigate then you
+would get.
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Sat Jul 20 00:16:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 58460440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 19:16:23 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 20 Jul 2002 00:16:23 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JNCdJ13125 for
+    <jm-ilug@jmason.org>; Sat, 20 Jul 2002 00:12:39 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA05762; Sat, 20 Jul 2002 00:08:46 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id AAA05726 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 00:08:39 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6JN8c913959 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 00:08:38 +0100
+Date: Sat, 20 Jul 2002 00:08:36 +0100
+To: Ronan Waide <waider@waider.ie>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] How to copy some files
+Message-Id: <20020720000836.D12390@ie.suberic.net>
+References: <200207191515.g6JFFnX02981@linux.local>
+    <00a701c22f3e$51120b10$3864a8c0@sabeo.ie>
+    <20020719162840.GA3325@bagend.makalumedia.com>
+    <15672.18448.462171.646227@klortho.waider.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <15672.18448.462171.646227@klortho.waider.ie>; from
+    waider@waider.ie on Fri, Jul 19, 2002 at 06:10:40PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027638518.1948eb@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 06:10:40PM +0100, Ronan Waide wrote:
+> Sure, but soft links would do the same. To be honest, I'm trying to
+> think of a useful use of hard links right now, and I'm a little
+> stumped. There's gotta be some benefit that I'm missing that's
+> immediately obvious to everyone.
+
+mh used them nicely.  mh stores one message per file.  the refile command
+allows you to move a message from one folder to another *or* link it to
+another folder.  it uses hard links to do this.  this would suck to if
+it used soft links - what if i later deleted the actual file?
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Sat Jul 20 00:37:57 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 67959440C8
+	for <jm@localhost>; Fri, 19 Jul 2002 19:37:57 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Sat, 20 Jul 2002 00:37:57 +0100 (IST)
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6JNX8J14315 for
+    <jm-ilug@jmason.org>; Sat, 20 Jul 2002 00:33:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id AAA06617; Sat, 20 Jul 2002 00:32:43 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from relay05.indigo.ie (relay05.indigo.ie [194.125.133.229]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with SMTP id AAA06588 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 00:32:37 +0100
+Received: (qmail 50858 messnum 1193860 invoked from
+    network[159.134.100.10/k100-10.bas1.dbn.dublin.eircom.net]);
+    19 Jul 2002 23:32:36 -0000
+Received: from k100-10.bas1.dbn.dublin.eircom.net (HELO gemini.windmill)
+    (159.134.100.10) by relay05.indigo.ie (qp 50858) with SMTP; 19 Jul 2002
+    23:32:36 -0000
+Content-Type: text/plain; charset="iso-8859-1"
+From: Nick Murtagh <nickm@go2.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] Caching downloaded programs at gateway
+Date: Sat, 20 Jul 2002 00:32:37 +0100
+User-Agent: KMail/1.4.1
+References: <OFEGLPGPCHPACFLJPAILIENJDMAA.macarthy@iol.ie>
+    <3D36C750.F6CA73F2@skynet.ie>
+In-Reply-To: <3D36C750.F6CA73F2@skynet.ie>
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Message-Id: <200207200032.38090.nickm@go2.ie>
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Thursday 18 July 2002 14:49, Ray Kelly wrote:
+> one basic option that I know of is Squidalyser, http://ababa.org/
+> This doesn't do everything that you want but I've found
+> it useful myself on a number of fronts
+> Now it won't hive off things that have been downloaded but
+> it your cache is so tuned and you've got the dick space you
+> can keep some rather large objects in that.
+
+dick space?
+large objects?
+
+This is ILUG right?
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 59B7F440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:11:59 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:11:59 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFGL901396 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:16:21 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id PAA32552 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 15:55:24 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA31959; Mon, 22 Jul 2002 15:54:31 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA31911 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 15:54:17 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id PAA09175 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 15:18:58 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g6MErr715897 for ilug@linux.ie; Mon, 22 Jul 2002 15:53:53 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Mon, 22 Jul 2002 15:53:53 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] bind + lex + yacc...
+Message-Id: <20020722145353.GC14543@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: irish linux users group <ilug@linux.ie>
+References: <20020722153905.A27790@ie.suberic.net>
+    <OFEGLPGPCHPACFLJPAILAEENDNAA.macarthy@iol.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <OFEGLPGPCHPACFLJPAILAEENDNAA.macarthy@iol.ie>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Mon, Jul 22, 2002 at 03:48:54PM +0100, Justin MacCarthy mentioned:
+> Never having to support a large network myself, I know very little about
+> this..  but what do lex & yacc have to do with anything ?
+> These are language parsers, used to build complilers / interptreters  and
+> the like???!!!
+
+ Bind configs are one sort of file.
+
+ I think the person asking Kevin the question would like to have a nice
+config language like:
+
+ domain: "bing.com"
+ hosts:  www mail arse smeg twitter
+ ttl:    20000
+
+ and then using lex & yacc, they could write a program that converts
+between that config file, and the tedious bind configs, and maybe even
+auto-generate a reverse DNS config file while they are at it.
+
+ Personally, I think they are demented. It's much more a job for something
+simple like Sed or Awk. People using lex & yacc just because they can make
+baby jesus cry.
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:06 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 228D9440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:05 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:05 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFGu901745 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:16:56 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id PAA32428 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 15:27:11 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA30448; Mon, 22 Jul 2002 15:26:08 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from apollo.dit.ie (apollo.dit.ie [147.252.1.121]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id PAA30415 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 15:26:01 +0100
+Received: from jupiter.dit.ie (jupiter.dit.ie [147.252.1.77]) by
+    apollo.dit.ie (8.11.6/8.11.6) with ESMTP id g6MEDaW19243 for
+    <ilug@linux.ie>; Mon, 22 Jul 2002 15:13:36 +0100
+Received: from holger ([147.252.132.189]) by mail.dit.ie (PMDF V6.1
+    #30532) with SMTP id <01KKEF1SBH5U8WX7OP@mail.dit.ie> for ilug@linux.ie;
+    Mon, 22 Jul 2002 15:23:56 +0100 (WET-DST)
+Date: Mon, 22 Jul 2002 15:26:00 +0100
+From: Richard Eibrand <richard.eibrand@dit.ie>
+To: ilug <ilug@linux.ie>
+Message-Id: <ECTQGOIA9WQGBIHXR63DBGDIGZU42LH.3d3c15f8@holger>
+Organization: DIT Kevin Street
+MIME-Version: 1.0
+X-Mailer: Opera 6.01 build 1041
+Content-Type: text/plain; charset=windows-1252
+Content-Transfer-Encoding: 7BIT
+X-Priority: 3 (Normal)
+Subject: [ILUG] Dell Inspiron 2650 X problem
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Howdy all, 
+
+I have a friend with the problem outlined below, suggestions anyone?
+
+
+"I have a dell inspirion 2650 laptop, with a P4 1.6GHz proc., an Nvidia Geforce II graphics card (8Mb) and am trying  to 
+install redhat 7.3 .
+The installation goes nicely until the Xwindows setup. My graphics card IS detected but not the monitor. I have  
+randomly chosen various LCD laptop display monitors but none seem to work, problem is that when i test a  particular 
+monitor the screen doesn't default back to the nice clear picture  i have become acustomed to but  remains fuzzy and 
+flashy so it is impossible to test another monitor type. rebooting allows me to run in text mode  where i try to configure X 
+again with Xconfigurator but i run into the same problem again.
+
+Very annoying..."
+
+Ta very, 
+
+R
+
+----------------------------------------
+Richard Eibrand,
+School of Computing
+Dublin Institute of Technology
+Kevin Street, Dublin 8
+Ireland
+
+Office : 	+353 1 402 4682
+Mobile : 	+353 87 618 1793
+Email  : 	richard.eibrand@dit.ie, 
+         	reibrand@maths.kst.dit.ie
+
+ 
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:07 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 5D909440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:07 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:07 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFhaI08571 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:43:36 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id JAA30880 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 09:10:45 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA15617; Mon, 22 Jul 2002 09:10:08 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA15550 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 09:10:00 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id IAA17820 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 08:34:47 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g6M89fA07479 for ilug@linux.ie; Mon, 22 Jul 2002 09:09:41 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Mon, 22 Jul 2002 09:09:41 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: ILUG Mailing List <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+Message-Id: <20020722080941.GI3234@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: ILUG Mailing List <ilug@linux.ie>
+References: <1027108120.3d386d180910a@webmail.gameshrine.com>
+    <15673.14143.879609.371088@gargle.gargle.HOWL>
+    <20020720184341.E23917@ie.suberic.net>
+    <15673.47359.781493.358686@gargle.gargle.HOWL>
+    <20020720213335.A27034@ie.suberic.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020720213335.A27034@ie.suberic.net>
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sat, Jul 20, 2002 at 09:33:35PM +0100, kevin lyda mentioned:
+> >  > apparently some systems limited soft links to the same device but
+> >  > gave up after a while.  
+> > Why?
+> to make them consistent with hard links.
+
+ That's something that POSIX would do - make every platform as equally
+broken, rather than standing up and saying "how about we try & make
+everyone better".
+
+ (why ? Because in the real world, you can't. Somethings just suck)
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:10 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 15F69440CC
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:08 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:08 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFhZI08547 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:43:35 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id JAA30906 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 09:19:37 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA16113; Mon, 22 Jul 2002 09:18:30 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from seven.eurokom.ie (seven.eurokom.ie [192.135.225.79]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id JAA16084 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 09:18:24 +0100
+Received: from [213.190.149.122] (mailgate.bge.eurokom.ie
+    [213.190.149.122]) by vms.eurokom.ie (PMDF V5.2-33 #40199) with SMTP id
+    <01KKE2A2DB6M9E8AXU@vms.eurokom.ie> for ilug@linux.ie; Mon, 22 Jul 2002
+    09:18:00 +0100 (WET-DST)
+Received: from no.name.available by [213.190.149.122]          via smtpd
+    (for vms.eurokom.ie [192.135.225.92]) with SMTP; Mon, 22 Jul 2002 08:16:37
+    +0000 (UT)
+Received: by exch02.bge.ie with Internet Mail Service (5.5.2653.19) id
+    <3VH65PAV>; Mon, 22 Jul 2002 09:15:18 +0100
+Date: Mon, 22 Jul 2002 09:15:17 +0100
+From: Liam Maher <LMAHER@bge.ie>
+To: ilug@linux.ie
+Message-Id: <74FD0D00945F7644ACC64730931C054AA9E857@exch02.bge.ie>
+MIME-Version: 1.0
+X-Mailer: Internet Mail Service (5.5.2653.19)
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: 7BIT
+Subject: [ILUG] RH 7.3 and 3Com 3C905C
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I upgraded from RH 7.2 to RH 7.3 over the weekend and now the network card
+has died, when I take a look at the network configuration tool it tells me
+the card is inactive and when I try to activate it the operation fails. I
+cant seem to find 3C905C software on the web ! Any ideas ?
+
+Cheers
+Liam
+
+
+
+************************************************************
+
+E-mail Disclaimer: 
+
+This e-mail message and any attachments may contain information, which is
+confidential , privileged or commercially sensitive, the content of which
+may not be disclosed or used by anyone other then the named addressee.  If
+you have received this e-mail in error please notify the sender immediately
+and delete this e-mail from your system. 
+
+BGE does not accept any responsibility for the accuracy or completeness of
+the contents of this e-mail or its attachments or for any statements or
+contractual commitments contained in this e-mail or its attachments.  BGE
+cannot guarantee that the message or any attachment is virus free or has not
+been intercepted, corrupted or amended.  Therefore, BGE denies all liability
+for any breach of confidence, loss or damage that may be  suffered by the
+recipient and any person opening it.  
+
+If you are not the intended recipient, any disclosure, copying, distribution
+or any action taken or omitted to be taken in reliance on it is prohibited
+and is unlawful. 
+
+Thank you for your attention. 
+
+Visit our website www.bge.ie 
+
+************************************************************
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:11 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id CC5FB440CD
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:08 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:08 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFhXI08522 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:43:33 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id JAA30967 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 09:34:11 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id JAA16743; Mon, 22 Jul 2002 09:33:05 +0100
+Received: from mel-rto3.wanadoo.fr (smtp-out-3.wanadoo.fr
+    [193.252.19.233]) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id JAA16706
+    for <ilug@linux.ie>; Mon, 22 Jul 2002 09:32:58 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host smtp-out-3.wanadoo.fr
+    [193.252.19.233] claimed to be mel-rto3.wanadoo.fr
+Received: from mel-rta9.wanadoo.fr (193.252.19.69) by mel-rto3.wanadoo.fr
+    (6.5.007) id 3D1848E600E30E6F for ilug@linux.ie; Mon, 22 Jul 2002 10:32:23
+    +0200
+Received: from bolsh.wanadoo.fr (80.8.238.37) by mel-rta9.wanadoo.fr
+    (6.5.007) id 3D2A791A0064D402 for ilug@linux.ie; Mon, 22 Jul 2002 10:32:23
+    +0200
+Received: from dave by bolsh.wanadoo.fr with local (Exim 3.32 #1 (Debian))
+    id 17WYgq-0001SS-00 for <ilug@linux.ie>; Mon, 22 Jul 2002 10:37:12 +0200
+Date: Mon, 22 Jul 2002 10:37:12 +0200
+From: David Neary <dneary@wanadoo.fr>
+To: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] jpeg patented...
+Message-Id: <20020722103712.A5367@wanadoo.fr>
+References: <20020719041127.A29748@ie.suberic.net>
+    <15673.64797.792173.490109@klortho.waider.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+Content-Disposition: inline
+In-Reply-To: <15673.64797.792173.490109@klortho.waider.ie>
+User-Agent: Mutt/1.3.23i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+Ronan Waide wrote:
+> Having skimmed over the patent, it appears to be describing a sort of
+> image compression algorithm which gels more or less with the JPEG
+> mechanism. Since I don't quite understand how jpeg works (it's hard
+> math, and I'm just a dumb comp. eng.)
+
+It's not hard math - jpeg is a straight block-based DCT with
+quantisation - which is about the oldest image compression
+algorithm out there, and I think certainly predates 1986. So I
+really have no idea what they claim they've patented - doin DCT
+on 8x8 blocks of an image, quantising the resulting coefficients,
+or DCT in general? I'm extremely skeptical about this whole
+story...
+
+> I don't know how exactly it
+> matches up to JPEG. I'm more curious as to whether it covers MPEG,
+> because it /is/ described in the context of video streams rather than
+> stills, and I had a vague impression that the MPEG and JPEG
+> compression techniques were similar. One of the patents it references
+> also seems to hint at MPEG.
+
+MPEG 1, 2, 4 or 7? They're all very different compression
+algorithms.
+
+Anyway, here's to ogg, and hopefully the future mpeg4-standard
+compression algorithm the project comes up with (fingers
+crossed). And I wouldn't worry about the jpeg thing - in addition
+the patent runs out next year, and I would suggest that having
+failed to protect their IP for 15 years, as (iirc) is their
+responsibility, their claim would probably never hold up in
+court.
+
+Cheers,
+Dave.
+
+-- 
+       David Neary,
+    Marseille, France
+  E-Mail: bolsh@gimp.org
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:16 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 4F429440C9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:13 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:13 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFklI10365 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:46:47 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id XAA29256 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 23:07:38 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id XAA27862; Sun, 21 Jul 2002 23:06:40 +0100
+Received: from hibernia.jakma.org (hibernia.clubi.ie [212.17.32.129]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id XAA27824 for <ilug@linux.ie>;
+    Sun, 21 Jul 2002 23:06:34 +0100
+Received: from fogarty.jakma.org (fogarty.jakma.org [192.168.0.4]) by
+    hibernia.jakma.org (8.11.6/8.11.6) with ESMTP id g6LMCcw14609;
+    Sun, 21 Jul 2002 23:12:38 +0100
+Received: from localhost (paul@localhost) by fogarty.jakma.org
+    (8.11.6/8.11.6) with ESMTP id g6LMCZl09031; Sun, 21 Jul 2002 23:12:36
+    +0100
+X-Authentication-Warning: fogarty.jakma.org: paul owned process doing -bs
+Date: Sun, 21 Jul 2002 23:12:34 +0100 (IST)
+From: Paul Jakma <paul@clubi.ie>
+X-X-Sender: paul@fogarty.jakma.org
+To: kevin lyda <kevin+dated+1027480289.5c6047@ie.suberic.net>
+Cc: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] jpeg patented...
+In-Reply-To: <20020719041127.A29748@ie.suberic.net>
+Message-Id: <Pine.LNX.4.44.0207190449520.16137-100000@fogarty.jakma.org>
+X-Nsa: iraq saddam hammas hisballah rabin ayatollah korea vietnam revolt
+    mustard gas
+X-Dumb-Filters: aryan marijuiana cocaine heroin hardcore cum pussy porn
+    teen tit sex lesbian group
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, 19 Jul 2002, kevin lyda wrote:
+
+> go after next?  how many jpeg rendering/creating apps/os's has ms
+> distributed to their customers since 1986?
+
+pah.. MS'd just buy them. (and i'm sure they'd happy for this to
+happen).
+
+> kevin
+
+oh yes, see you've setup that tdma thingy, so here's a thought. do
+you reckon spammers (or the software they use) is/are smart enough to
+
+	s/\(.\)+\+.*@\([a-zA-Z\.0-9\-]\)/\1@\2/
+
+on email addresses? it's a fairly old trick, so i dont see why they
+wouldnt.
+
+personally, i rarely get spam to any of the plussed addresses
+i've given out - i think i've only ever gotten /one/ cause ebay 
+seem to have sold on my address. apart from that - never, not even 
+to +usenet, so i wonder whether harvesting software does the above.
+
+regards,
+-- 
+Paul Jakma	paul@clubi.ie	paul@jakma.org	Key ID: 64A2FF6A
+Fortune:
+Thus spake the master programmer:
+	"After three days without programming, life becomes meaningless."
+		-- Geoffrey James, "The Tao of Programming"
+
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7E11E440CC
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:16 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:16 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFjQI09414 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:45:26 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id FAA30306 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 05:33:32 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id FAA08215; Mon, 22 Jul 2002 05:32:30 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id FAA08179
+    for <ilug@linux.ie>; Mon, 22 Jul 2002 05:32:23 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts15-029.dublin.indigo.ie
+    [194.125.176.29]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    E38EAF8FD for <ilug@linux.ie>; Mon, 22 Jul 2002 05:17:14 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    346C43C4E3; Mon, 22 Jul 2002 05:39:38 +0100 (IST)
+Date: Mon, 22 Jul 2002 05:39:37 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Message-Id: <20020722043937.GA1732@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.27i
+Subject: [ILUG] Samba login question
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I have a situation with a small network as follows:
+
+A number of client workstations which are running VMware, each of which will
+run a local copy of Samba (not the VMware autoinstalled version) to let
+VMware access local linux disks.
+
+An NIS/NFS server which will also run Samba to allow the VMware clients
+access to its filesystems.
+
+How can I set things up so that all the VMware clients (all running 'doze
+98, possibly being upgraded in future to W2K) authenticate against the NIS
+server's Samba ? I have read the Samab documentation in  large quantities
+down through the years but as I've never wanted to do anything like this, I
+never paid much attention to all the stuff about domain controllers etc.
+which I presume is what I will need to have running here.
+
+I would also like, if at all possible, to have synchronisation of passwords
+between the NIS domain and the NIS server's Samba with minimal manual
+intervention.
+
+Ideas, accompanied by annotated Samba configration files :-) , gratefully
+received.
+
+
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:23 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 048E4440CD
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:19 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:19 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFwJY14614 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:58:19 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id TAA28600 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 19:17:10 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA20518; Sun, 21 Jul 2002 19:16:39 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail1.mail.iol.ie (mail1.mail.iol.ie [194.125.2.192]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA20484 for <ilug@linux.ie>;
+    Sun, 21 Jul 2002 19:16:32 +0100
+Received: from [194.165.161.155] (helo=excalibur.research.wombat.ie) by
+    mail1.mail.iol.ie with esmtp (Exim 3.35 #1) id 17WL8u-0005ob-00;
+    Sun, 21 Jul 2002 19:09:16 +0100
+Received: (from kenn@localhost) by excalibur.research.wombat.ie
+    (8.11.6/8.11.6) id g6LIGUq12426; Sun, 21 Jul 2002 19:16:30 +0100
+Date: Sun, 21 Jul 2002 19:16:30 +0100
+From: Kenn Humborg <kenn@linux.ie>
+To: John Gay <johngay@eircom.net>
+Cc: ilug@linux.ie
+Subject: Re: [ILUG] Optimising for PentiumMMX?
+Message-Id: <20020721191629.A12416@excalibur.research.wombat.ie>
+References: <200207211807.TAA20052@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <200207211807.TAA20052@lugh.tuatha.org>; from
+    johngay@eircom.net on Sun, Jul 21, 2002 at 07:06:06PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sun, Jul 21, 2002 at 07:06:06PM +0100, John Gay wrote:
+> I am wondering if the C, and other libraries  should be re-built? Can they 
+> take advantage of the Pentium and MMX instructions for system performance? 
+> And would this require re-building gcc as well?
+
+glibc is a likely candidate.
+
+> On a related note, I know I've mentioned here before, but I'm still looking 
+> for a Slot 1 550Mhz PIII. My regular system is a Dual PII350 and the 440BX 
+> M/B can take PIII's. I managed to get my hands on one. If I could get another 
+> I could put the two PIII's into this box and re-compile X to use the 
+> SSE/Katmai instructions in the PIII. I just don't thing it is worth replacing 
+> two PII's with one PIII. I know that they are out-of-stock, and I do watch 
+> the Buy-N-Sell regularly, but short of buying a full PIII system, I've not 
+> had much luck.
+
+Keep an eye on eBay.  One annoyance of eBay is that many sellers state "will
+ship to US only".  However, I've found that if you ask nicely, they will
+usually ship over here.  For payments, either setup a paypal account or
+post the seller a US dollar bank draft.  I've got lots of little bits and
+pieces that way (for example, finally got my hands on a rackmount kit for
+my DECserver 700 terminal server which I'd been looking for for ages, for
+a total of US$15).
+
+Later,
+Kenn
+
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:27 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id E709B440D0
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:19 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:19 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFhbI08583 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:43:42 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id IAA30833 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 08:52:43 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA14804; Mon, 22 Jul 2002 08:48:37 +0100
+Received: from homer.jinny.ie ([193.120.171.3]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id IAA14773 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 08:48:31 +0100
+Received: from jlooney.jinny.ie (fw [193.120.171.2]) by homer.jinny.ie
+    (8.9.3/8.11.2) with ESMTP id IAA16614 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 08:13:15 +0100
+Received: (from john@localhost) by jlooney.jinny.ie (8.11.6/8.11.6) id
+    g6M7m9s01589 for ilug@linux.ie; Mon, 22 Jul 2002 08:48:09 +0100
+X-Authentication-Warning: jlooney.jinny.ie: john set sender to
+    jlooney@jinny.ie using -f
+Date: Mon, 22 Jul 2002 08:48:08 +0100
+From: "John P. Looney" <valen@tuatha.org>
+To: Irish LUG list <ilug@linux.ie>
+Message-Id: <20020722074808.GF3234@jinny.ie>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Irish LUG list <ilug@linux.ie>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.4i
+X-Os: Red Hat Linux 7.3/Linux 2.4.18-3
+X-Url: http://www.redbrick.dcu.ie/~valen
+X-Gnupg-Publickey: http://www.redbrick.dcu.ie/~valen/public.asc
+Subject: [ILUG] FAT undelete on linux ?
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+ Has anyone used (successfully!) a fat undelete program on Linux ?
+
+ Something like a simple version of the norton disk tools would be fine.
+Actually, most likely the MS DOS "undelete" program would do...
+
+Kate
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:29 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id C969E440D1
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:20 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:20 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFHV902187 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:17:31 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id NAA31913 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 13:54:35 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id NAA26577; Mon, 22 Jul 2002 13:50:50 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from odin.he.net (odin.he.net [216.218.181.2]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id NAA26538 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 13:50:39 +0100
+Received: from renegade (c-24-127-153-207.we.client2.attbi.com
+    [24.127.153.207]) by odin.he.net (8.8.6/8.8.2) with SMTP id FAA27471 for
+    <ilug@linux.ie>; Mon, 22 Jul 2002 05:50:36 -0700
+From: "Paul O'Neil" <poneil@dbiassociates.net>
+To: <ilug@linux.ie>
+Date: Mon, 22 Jul 2002 05:50:37 -0700
+Message-Id: <NIEFJJMMNPJNOPIDJBFBOEEECDAA.poneil@dbiassociates.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3 (Normal)
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook IMO, Build 9.0.2416 (9.0.2910.0)
+X-Mimeole: Produced By Microsoft MimeOLE V5.50.4522.1200
+Importance: Normal
+Subject: [ILUG] nmap results
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I had posted previously about the 2.4 kernel using iptables I ran nmap
+against. The IPID sequence generation was all zeros. Someone said this was
+indicative of earlier kernels but was fixed about 2.4.5 version. Since I'm
+running the latest what is causing this? I ran nmap against a 2.2 kernel
+using chains and it had better results than the stock 2.4 kernel.
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:30 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id D347F440D2
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:21 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:21 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG25Y16946 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:02:05 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id BAA25309 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 01:54:51 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA10664; Sun, 21 Jul 2002 01:54:23 +0100
+Received: from marklar.elive.net (smtp.elive.ie [212.120.138.41]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id BAA10633; Sun, 21 Jul 2002
+    01:54:16 +0100
+Received: from gonzo.waider.ie
+    (IDENT:9yNv5hbo7W6wr7oysu/T1YW/bnEIzd6A@1Cust138.tnt3.dub2.ie.uudial.net
+    [213.116.44.138]) by marklar.elive.net (8.11.6/8.11.6) with ESMTP id
+    g6L0UBj02902; Sun, 21 Jul 2002 01:30:12 +0100
+Received: from klortho.waider.ie
+    (IDENT:BAdQQqovjq9VnkkVZd8ToMgH7Knbc4sS@klortho.waider.ie [10.0.0.100]) by
+    gonzo.waider.ie (8.11.6/8.11.6) with ESMTP id g6L0s0t08885; Sun,
+    21 Jul 2002 01:54:01 +0100
+Received: (from waider@localhost) by klortho.waider.ie (8.11.6/8.11.6) id
+    g6L0rv021891; Sun, 21 Jul 2002 01:53:57 +0100
+X-Authentication-Warning: klortho.waider.ie: waider set sender to
+    waider@waider.ie using -f
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15674.1573.36050.128467@klortho.waider.ie>
+Date: Sun, 21 Jul 2002 01:53:57 +0100
+From: Ronan Waide <waider@waider.ie>
+To: Paul Jakma <paul@clubi.ie>
+Cc: kevin lyda <kevin+dated+1027629217.152a82@linux.ie>,
+	Aidan Kehoe <kehoea@parhasard.net>, ILUG Mailing List <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+In-Reply-To: <Pine.LNX.4.44.0207210115130.29125-100000@fogarty.jakma.org>
+References: <20020720213335.A27034@ie.suberic.net>
+    <Pine.LNX.4.44.0207210115130.29125-100000@fogarty.jakma.org>
+X-Mailer: VM 7.07 under Emacs 21.2.1
+Organization: poor at best.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On July 21, paul@clubi.ie said:
+> 
+> reiser's handles to files are hashes i believe. fat: dont think you 
+> can make symlinks on it.
+
+You can't; hard links only. And those get cleaned up by ScanDisk as
+"cross-linked files". Shortcuts are the Windows analogue of symlinks,
+and they don't work outside the Windows environment - i.e. they're an
+artifact of the OS rather than the FS.
+
+Cheers.
+Waider.
+-- 
+waider@waider.ie / Yes, it /is/ very personal of me.
+"if you can't live the lie, let it die/and if you can't live a life filled
+ with strife/honey, just say oops/and jump through hoops/and get to the end of
+ the line" - FLC, "Bear Hug" (Come Find Yourself)
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:35 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 23AC4440D6
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:23 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:23 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG06Y15770 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:00:06 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id SAA28457 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 18:56:18 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id SAA19593; Sun, 21 Jul 2002 18:55:25 +0100
+Received: from mail.magicgoeshere.com (nw152-60.indigo.ie [194.125.152.60]
+    (may be forged)) by lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id SAA19552
+    for <ilug@linux.ie>; Sun, 21 Jul 2002 18:55:05 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host nw152-60.indigo.ie
+    [194.125.152.60] (may be forged) claimed to be mail.magicgoeshere.com
+Received: from bagend.magicgoeshere.com (ts15-075.dublin.indigo.ie
+    [194.125.176.75]) by mail.magicgoeshere.com (Postfix) with ESMTP id
+    7B04EF8FD for <ilug@linux.ie>; Sun, 21 Jul 2002 18:39:57 +0100 (IST)
+Received: by bagend.magicgoeshere.com (Postfix, from userid 501) id
+    D5D2F3C3CF; Sun, 21 Jul 2002 18:53:41 +0100 (IST)
+Date: Sun, 21 Jul 2002 18:53:41 +0100
+From: Niall O Broin <niall@linux.ie>
+To: ilug@linux.ie
+Subject: Re: [ILUG] [OT] GPL & PHP Question
+Message-Id: <20020721175341.GB1739@bagend.makalumedia.com>
+Reply-To: ilug@linux.ie
+Mail-Followup-To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+References: <200207192053.VAA32306@lugh.tuatha.org>
+    <20020719224739.GC3854@bagend.makalumedia.com>
+    <20020720190317.F23917@ie.suberic.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20020720190317.F23917@ie.suberic.net>
+User-Agent: Mutt/1.3.27i
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sat, Jul 20, 2002 at 07:03:17PM +0100, kevin lyda wrote:
+
+> > > I know this is not strictly a 'Linux' issue but any help would be appreciated
+> > Microsoft has very much made this a Linux issue - it has attempted to imply
+> > that any company using GPL software must make everything it owns public and
+> > it must be true - that nice man from Microsoft wouldn't lie, would he ?
+> 
+> but that's just stupid.  microsoft s/w covers a subset of applications
+
+You know it's stupid - I know it's stupid. Nonetheless, Microsoft has tried
+to spread FUD about the viral nature of the GPL to make CEO/CIO level people
+(often not the most technically clueful, even the CIOs) fear that if they so
+much as use a Linux box, as, say, a print server, they'll have to make their
+company's entire IP public. (I don't think Microsoft said precisely what I
+jsut said, but that was the tenor of the remarks). And their marketing
+budget is a tad bigger than yours or mine.
+
+
+
+Niall
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:34 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 7A815440D3
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:22 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:22 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFIB902764 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:18:11 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id LAA31416 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 11:42:48 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id LAA21751; Mon, 22 Jul 2002 11:41:46 +0100
+Received: from mandark.labs.netnoteinc.com ([213.105.180.140]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id LAA21721 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 11:41:39 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [213.105.180.140] claimed
+    to be mandark.labs.netnoteinc.com
+Received: from triton.labs.netnoteinc.com
+    (lbedford@triton.labs.netnoteinc.com [192.168.2.12]) by
+    mandark.labs.netnoteinc.com (8.11.6/8.11.6) with SMTP id g6MAfcp08907 for
+    <ilug@linux.ie>; Mon, 22 Jul 2002 11:41:38 +0100
+Date: Mon, 22 Jul 2002 11:41:37 +0100
+From: Liam Bedford <lbedford@netnoteinc.com>
+To: Irish Linux Users Group <ilug@linux.ie>
+Subject: Re: [ILUG] hard- vs. soft-links [was: How to copy some files ]
+Message-Id: <20020722114137.09048a40.lbedford@netnoteinc.com>
+In-Reply-To: <200207192238.g6JMc9X05992@linux.local>
+References: <002c01c22f67$4216c280$f264a8c0@sabeo.ie>
+    <200207192238.g6JMc9X05992@linux.local>
+Organization: Netnote International
+X-Mailer: Sylpheed version 0.7.8claws69 (GTK+ 1.2.10; i386-debian-linux-gnu)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, 19 Jul 2002 23:38:09 +0100
+Brian Foster claiming to think:
+
+>  but, like the classic techniques, there is no rolling
+>  back of accidental overwrites.
+> 
+>  ( rolling back overwrites reminds me of the "snapshot"
+>   facility on NetWork Appliance fileservers.  and of the
+>   various "versioning" filesystems which appeared --- and
+>   then vanished? --- over the years.... )
+> 
+and it's in FreeBSD 5.0-CURRENT AFAIK...
+
+/me migrates every linux box to the one true way..
+
+L.
+-- 
+     dBP   dBBBBb | If you're looking at me to be an accountant
+              dBP | Then you will look but you will never see
+   dBP    dBBBK'  | If you're looking at me to start having babies
+  dBP    dB' db   | Then you can wish because I'm not here to fool around
+ dBBBBP dBBBBP'   | Belle & Sebastian (Family Tree)
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:41 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F29B2440C8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:23 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:24 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFIS903037 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:18:28 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id KAA31189 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 10:44:53 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA19571; Mon, 22 Jul 2002 10:44:21 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail1.mail.iol.ie (mail1.mail.iol.ie [194.125.2.192]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA19546 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 10:44:14 +0100
+Received: from dialup152-a.ts551.cwt.esat.net ([193.203.140.152]
+    helo=Hobbiton.cod.ie) by mail1.mail.iol.ie with esmtp (Exim 3.35 #1) id
+    17WZce-0002cR-00 for ilug@linux.ie; Mon, 22 Jul 2002 10:36:56 +0100
+Received: (from cdaly@localhost) by Hobbiton.cod.ie (8.11.6/8.9.3) id
+    g6LMJuB26227 for ilug@linux.ie; Sun, 21 Jul 2002 23:19:56 +0100
+Date: Sun, 21 Jul 2002 23:19:53 +0100
+From: Conor Daly <conor.daly@oceanfree.net>
+To: ilug@linux.ie
+Subject: Re: [ILUG] When is a wav not a wav?
+Message-Id: <20020721231953.D22357@Hobbiton.cod.ie>
+Mail-Followup-To: ilug@linux.ie
+References: <200207202147.WAA03958@lugh.tuatha.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5i
+In-Reply-To: <200207202147.WAA03958@lugh.tuatha.org>; from
+    johngay@eircom.net on Sat, Jul 20, 2002 at 08:48:30PM +0100
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sat, Jul 20, 2002 at 08:48:30PM +0100 or so it is rumoured hereabouts, 
+John Gay thought:
+> 
+> xanim can, and does play them correctly though. Unfortunately xanim does not 
+> have any position control so you just have to listen to the album from start 
+> to finish.
+> 
+> What I would like to do is split up the tracks and convert them the mp3 for 
+> xmms. I'm jsut not sure what tools would be able to handle these strange 
+> compressed wav's that only xanim seems to recognise? I like the albums, but 
+
+No idea if it can do these ones but mxv (or MixViews) has lots of
+configurables and it's whole purpose is to edit wavs.  I've used it to
+split up tapes into individual songs.  Not sure of a URL but the author is
+at
+
+MixViews@create.ucsb.edu
+
+Conor
+-- 
+Conor Daly <conor.daly@oceanfree.net>
+
+Domestic Sysadmin :-)
+---------------------
+Faenor.cod.ie
+ 11:29pm  up 59 days,  8:46,  0 users,  load average: 0.05, 0.05, 0.01
+Hobbiton.cod.ie
+ 11:17pm  up 2 days,  5:54,  2 users,  load average: 0.00, 0.03, 0.00
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:46 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id F0114440D8
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:25 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:25 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG2AY16977 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:02:10 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id BAA25262 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 01:20:08 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id BAA09188; Sun, 21 Jul 2002 01:15:47 +0100
+Received: from marklar.elive.net (smtp.elive.ie [212.120.138.41]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id BAA09150 for <ilug@linux.ie>;
+    Sun, 21 Jul 2002 01:15:40 +0100
+Received: from gonzo.waider.ie
+    (IDENT:EAhdBkKXlYbyGHKC2RMD3nVwYjuLO5UG@1Cust138.tnt3.dub2.ie.uudial.net
+    [213.116.44.138]) by marklar.elive.net (8.11.6/8.11.6) with ESMTP id
+    g6KNpcj02522; Sun, 21 Jul 2002 00:51:40 +0100
+Received: from klortho.waider.ie
+    (IDENT:6UNZ2NeFx+QKk/Y8JEWd9odY8uYjJ2TF@klortho.waider.ie [10.0.0.100]) by
+    gonzo.waider.ie (8.11.6/8.11.6) with ESMTP id g6L0FSt08770; Sun,
+    21 Jul 2002 01:15:28 +0100
+Received: (from waider@localhost) by klortho.waider.ie (8.11.6/8.11.6) id
+    g6L0FQt18963; Sun, 21 Jul 2002 01:15:26 +0100
+X-Authentication-Warning: klortho.waider.ie: waider set sender to
+    waider@waider.ie using -f
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-Id: <15673.64797.792173.490109@klortho.waider.ie>
+Date: Sun, 21 Jul 2002 01:15:25 +0100
+From: Ronan Waide <waider@waider.ie>
+To: kevin lyda <kevin+dated+1027480289.5c6047@ie.suberic.net>
+Cc: irish linux users group <ilug@linux.ie>
+Subject: Re: [ILUG] jpeg patented...
+In-Reply-To: <20020719041127.A29748@ie.suberic.net>
+References: <20020719041127.A29748@ie.suberic.net>
+X-Mailer: VM 7.07 under Emacs 21.2.1
+Organization: poor at best.
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On July 19, kevin+dated+1027480289.5c6047@ie.suberic.net said:
+> http://biz.yahoo.com/bw/020711/110249_1.html
+> 
+> oh, and look, sony already caved:
+> 
+>     http://biz.yahoo.com/bw/020610/100215_2.html
+> 
+> it generated over 1000 comments on /..  might be an idea to look into
+> png's.  in the meantime it will be amusing to see who they'll go after
+> next?  how many jpeg rendering/creating apps/os's has ms distributed to
+> their customers since 1986?
+> 
+> kevin
+
+Having skimmed over the patent, it appears to be describing a sort of
+image compression algorithm which gels more or less with the JPEG
+mechanism. Since I don't quite understand how jpeg works (it's hard
+math, and I'm just a dumb comp. eng.) I don't know how exactly it
+matches up to JPEG. I'm more curious as to whether it covers MPEG,
+because it /is/ described in the context of video streams rather than
+stills, and I had a vague impression that the MPEG and JPEG
+compression techniques were similar. One of the patents it references
+also seems to hint at MPEG.
+
+Let's all use PNG, eh? *cough* *wheeze*
+
+Cheers,
+Waider.
+-- 
+waider@waider.ie / Yes, it /is/ very personal of me.
+
+"It would be hard to design a worse outdoor chair without making it
+ irresistably delicious to squirrels." - L. Fitzgerald Sjoberg
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:45 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3FE5E440D7
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:25 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:25 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFGv901750 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:16:57 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id PAA32424 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 15:26:53 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA30102; Mon, 22 Jul 2002 15:21:57 +0100
+Received: from mail2.xelector.com ([62.17.160.138]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id PAA30077 for <ilug@linux.ie>; Mon,
+    22 Jul 2002 15:21:50 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host [62.17.160.138] claimed to
+    be mail2.xelector.com
+Received: from [172.18.80.15] (helo=xelwx002.xelector.com) by
+    mail2.xelector.com with esmtp (Exim 3.34 #1) id 17WdyF-0001up-00;
+    Mon, 22 Jul 2002 15:15:31 +0100
+Received: from xeljreilly (xeljreilly.talbot.xelector.com [172.18.80.234])
+    by xelwx002.xelector.com with SMTP (Microsoft Exchange Internet Mail
+    Service Version 5.5.2653.13) id 39X75HBN; Mon, 22 Jul 2002 15:19:01 +0100
+Message-Id: <000701c2318a$993a2e10$ea5012ac@xelector.com>
+From: "John Reilly" <jr@inconspicuous.org>
+To: "Paul O'Neil" <poneil@dbiassociates.net>, <ilug@linux.ie>
+References: <NIEFJJMMNPJNOPIDJBFBOEEECDAA.poneil@dbiassociates.net>
+Subject: Re: [ILUG] nmap results
+Date: Mon, 22 Jul 2002 15:18:06 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-Msmail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 5.00.2919.6600
+X-Mimeole: Produced By Microsoft MimeOLE V5.00.2919.6600
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+As far as I can remember, the fact that the IPID is zero was introduced into
+2.4 was to introduce correct behaviour, i.e. in the case where it is not
+needed, it is set to zero.  This was discussed on bugtraq a while
+ago....lemme see...
+http://cert.uni-stuttgart.de/archive/bugtraq/2002/03/msg00372.html shows a
+message from nmap's author on the subject.  The only thing having IPID==0
+achieves is that you have one more criteria on which to base your OS
+fingerprint which isn't really much of a problem to be honest.
+
+Stop worrying about it :)
+
+Cheers,
+jr
+----- Original Message -----
+From: "Paul O'Neil" <poneil@dbiassociates.net>
+To: <ilug@linux.ie>
+Sent: Monday, July 22, 2002 1:50 PM
+Subject: [ILUG] nmap results
+
+
+> I had posted previously about the 2.4 kernel using iptables I ran nmap
+> against. The IPID sequence generation was all zeros. Someone said this was
+> indicative of earlier kernels but was fixed about 2.4.5 version. Since I'm
+> running the latest what is causing this? I ran nmap against a 2.2 kernel
+> using chains and it had better results than the stock 2.4 kernel.
+>
+> --
+> Irish Linux Users' Group: ilug@linux.ie
+> http://www.linux.ie/mailman/listinfo/ilug for (un)subscription
+information.
+> List maintainer: listmaster@linux.ie
+
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:52 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 9094C440D9
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:26 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:26 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG3TY17504 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:03:29 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id TAA24602 for <jm-ilug@jmason.org>;
+    Sat, 20 Jul 2002 19:04:03 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA28461; Sat, 20 Jul 2002 19:03:29 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id TAA28423 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 19:03:20 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6KI3J925905 for <ilug@linux.ie>;
+    Sat, 20 Jul 2002 19:03:19 +0100
+Date: Sat, 20 Jul 2002 19:03:17 +0100
+To: Niall O Broin <niall@linux.ie>, ilug@linux.ie
+Subject: Re: [ILUG] [OT] GPL & PHP Question
+Message-Id: <20020720190317.F23917@ie.suberic.net>
+References: <200207192053.VAA32306@lugh.tuatha.org>
+    <20020719224739.GC3854@bagend.makalumedia.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <20020719224739.GC3854@bagend.makalumedia.com>;
+    from niall@linux.ie on Fri, Jul 19, 2002 at 11:47:39PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027620199.79af71@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Fri, Jul 19, 2002 at 11:47:39PM +0100, Niall O Broin wrote:
+> > I know this is not strictly a 'Linux' issue but any help would be appreciated
+> Microsoft has very much made this a Linux issue - it has attempted to imply
+> that any company using GPL software must make everything it owns public and
+> it must be true - that nice man from Microsoft wouldn't lie, would he ?
+
+but that's just stupid.  microsoft s/w covers a subset of applications
+that are under the gpl.  there are gpl word processors, there's a
+microsoft wp; there are various language compilers and interpreters under
+the gpl, microsoft has their visual compilers.  and so on.  and just
+like the gpl apps, the microsoft apps are distributed under a license.
+that license says lots of things, and there are various licenses used by
+microsoft, but in a nutshell they all pretty much say: you can't copy,
+distribute or modify their s/w; you can't sell it multiple times.
+
+so does anyone think that applies to their wp documents or their visual
+c++ code?
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:12:53 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 2385B440DA
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:27 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:27 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFIV903109 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:18:31 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id KAA31180 for <jm-ilug@jmason.org>;
+    Mon, 22 Jul 2002 10:42:04 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id KAA19400; Mon, 22 Jul 2002 10:41:00 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id KAA19364 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 10:40:48 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6M9ek923178 for <ilug@linux.ie>;
+    Mon, 22 Jul 2002 10:40:46 +0100
+Date: Mon, 22 Jul 2002 10:40:44 +0100
+To: Paul Jakma <paul@clubi.ie>
+Cc: irish linux users group <ilug@linux.ie>
+Subject: tmda (was: Re: [ILUG] jpeg patented...)
+Message-Id: <20020722104044.B22647@ie.suberic.net>
+References: <20020719041127.A29748@ie.suberic.net>
+    <Pine.LNX.4.44.0207190449520.16137-100000@fogarty.jakma.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <Pine.LNX.4.44.0207190449520.16137-100000@fogarty.jakma.org>;
+    from paul@clubi.ie on Sun, Jul 21, 2002 at 11:12:34PM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027849246.18f3b4@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sun, Jul 21, 2002 at 11:12:34PM +0100, Paul Jakma wrote:
+> oh yes, see you've setup that tdma thingy, so here's a thought. do
+> you reckon spammers (or the software they use) is/are smart enough to
+> 
+> 	s/\(.\)+\+.*@\([a-zA-Z\.0-9\-]\)/\1@\2/
+> 
+> on email addresses? it's a fairly old trick, so i dont see why they
+> wouldnt.
+
+the dated address that my from appears as is a good address for five days
+for anyone.  after that it requires a confirm message from the sender.
+my regular email address requires a confirm address if i haven't
+explicitly given permission to the sender.
+
+and yes, spammers could try to set up a system to reply to my confirm
+messages, but that would require them to a) give out a valid email address
+in their From headers, and b) use a lot more bandwidth then they do now
+(thereby costing them more money).
+
+oh, and they can't forge confirm messages.  the confirm message system
+works something like this:
+
+    message goes in the pending q and is assigned an id.
+    that id is encrypted and used to create the from address of the
+	outgoing confirm mail - kevin+confirm+kghdsfg@ie.suberic.net
+    only a message to that address will work to free the message from
+	the q (or i can free it using tmda-pending).
+
+all of this is discussed on http://tmda.sf.net/
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:13:00 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id A7A98440DB
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:27 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:27 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MFxvY15665 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 16:59:57 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id TAA28524 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 19:07:59 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id TAA20083; Sun, 21 Jul 2002 19:07:34 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host root@localhost [127.0.0.1]
+    claimed to be lugh
+Received: from mail04.svc.cra.dublin.eircom.net
+    (mail04.svc.cra.dublin.eircom.net [159.134.118.20]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with SMTP id TAA20052 for <ilug@linux.ie>; Sun,
+    21 Jul 2002 19:07:28 +0100
+Message-Id: <200207211807.TAA20052@lugh.tuatha.org>
+Received: (qmail 83262 messnum 90486 invoked from
+    network[159.134.158.20/p20.as1.drogheda1.eircom.net]); 21 Jul 2002
+    18:06:45 -0000
+Received: from p20.as1.drogheda1.eircom.net (HELO there) (159.134.158.20)
+    by mail04.svc.cra.dublin.eircom.net (qp 83262) with SMTP; 21 Jul 2002
+    18:06:45 -0000
+Content-Type: text/plain; charset="iso-8859-15"
+From: John Gay <johngay@eircom.net>
+To: ilug@linux.ie
+Date: Sun, 21 Jul 2002 19:06:06 +0100
+X-Mailer: KMail [version 1.3.2]
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: [ILUG] Optimising for PentiumMMX?
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+I've been playing with an old Dell OptiPlex5110 and decided to attempt to 
+build a PentiumMMX optimised Linux on it.
+
+To start, I installed the bare minimum Debian system for  compiling programs.
+
+Next I built a custom kernel, since most CPU optimizations are best suited to 
+the kernel code.
+
+Next I built X4.2.0 from sources, especially since X make a lot of use of 
+matrixes and can also benifit from MMX optimizations. Since the first build, 
+I've been encouraged to play with the CVS of both XFree86 and the DRI stuff, 
+so I will be re-building X once we get some bugs worked out.
+
+Finally I built KDE3.0BETA1 from sources I had, again to take full advantage 
+of the MMX processor.
+
+Can anyone recommend other minimum tools that I should re-build to get even 
+more improvements in system performance? I know that not all packages can, or 
+do benefit from being built on PentiumMMX rather than the i386 that Debian 
+compiles to, but have I covered everything that CAN benefit?
+
+I am wondering if the C, and other libraries  should be re-built? Can they 
+take advantage of the Pentium and MMX instructions for system performance? 
+And would this require re-building gcc as well?
+
+I realise that not everything can benefit from re-compiling. I.E. I doubt I 
+would see much system improvement if I re-compile bash, but things like the 
+kernel, X and KDE should improve performance.
+
+On a related note, I know I've mentioned here before, but I'm still looking 
+for a Slot 1 550Mhz PIII. My regular system is a Dual PII350 and the 440BX 
+M/B can take PIII's. I managed to get my hands on one. If I could get another 
+I could put the two PIII's into this box and re-compile X to use the 
+SSE/Katmai instructions in the PIII. I just don't thing it is worth replacing 
+two PII's with one PIII. I know that they are out-of-stock, and I do watch 
+the Buy-N-Sell regularly, but short of buying a full PIII system, I've not 
+had much luck.
+
+Cheers,
+
+	John Gay
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+
+From ilug-admin@linux.ie  Mon Jul 22 18:13:03 2002
+Return-Path: <ilug-admin@linux.ie>
+Delivered-To: yyyy@localhost.netnoteinc.com
+Received: from localhost (localhost [127.0.0.1])
+	by phobos.labs.netnoteinc.com (Postfix) with ESMTP id 3B62A440CC
+	for <jm@localhost>; Mon, 22 Jul 2002 13:12:28 -0400 (EDT)
+Received: from dogma.slashnull.org [212.17.35.15]
+	by localhost with IMAP (fetchmail-5.9.0)
+	for jm@localhost (single-drop); Mon, 22 Jul 2002 18:12:28 +0100 (IST)
+Received: from webnote.net (mail.webnote.net [193.120.211.219]) by
+    dogma.slashnull.org (8.11.6/8.11.6) with ESMTP id g6MG1wY16885 for
+    <jm-ilug@jmason.org>; Mon, 22 Jul 2002 17:02:03 +0100
+Received: from lugh.tuatha.org (root@lugh.tuatha.org [194.125.145.45]) by
+    webnote.net (8.9.3/8.9.3) with ESMTP id CAA25361 for <jm-ilug@jmason.org>;
+    Sun, 21 Jul 2002 02:45:45 +0100
+Received: from lugh (root@localhost [127.0.0.1]) by lugh.tuatha.org
+    (8.9.3/8.9.3) with ESMTP id CAA12478; Sun, 21 Jul 2002 02:42:14 +0100
+Received: from ie.suberic.net (owsla.ie.suberic.net [62.17.162.83]) by
+    lugh.tuatha.org (8.9.3/8.9.3) with ESMTP id CAA12443 for <ilug@linux.ie>;
+    Sun, 21 Jul 2002 02:42:07 +0100
+X-Authentication-Warning: lugh.tuatha.org: Host owsla.ie.suberic.net
+    [62.17.162.83] claimed to be ie.suberic.net
+Received: from owsla.ie.suberic.net (owsla [127.0.0.1]) by ie.suberic.net
+    (8.11.6/8.11.6) with ESMTP id g6L1g6930863 for <ilug@linux.ie>;
+    Sun, 21 Jul 2002 02:42:06 +0100
+Date: Sun, 21 Jul 2002 02:42:03 +0100
+To: Paul Jakma <paul@clubi.ie>
+Cc: Aidan Kehoe <kehoea@parhasard.net>,
+	ILUG Mailing List <ilug@linux.ie>
+Subject: Re: [ILUG] How to copy some files
+Message-Id: <20020721024203.A29826@ie.suberic.net>
+References: <20020720213335.A27034@ie.suberic.net>
+    <Pine.LNX.4.44.0207210115130.29125-100000@fogarty.jakma.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.2.5.1i
+In-Reply-To: <Pine.LNX.4.44.0207210115130.29125-100000@fogarty.jakma.org>;
+    from paul@clubi.ie on Sun, Jul 21, 2002 at 01:47:39AM +0100
+X-Operating-System: Linux 2.4.18-5 i686
+X-GPG-Fingerprint: 9C1D 16F4 11F1 6BD2 933C  048D ACC7 9840 89D0 7646
+From: kevin lyda <kevin+dated+1027734126.560c2e@linux.ie>
+X-Delivery-Agent: TMDA/0.57
+Sender: ilug-admin@linux.ie
+Errors-To: ilug-admin@linux.ie
+X-Mailman-Version: 1.1
+Precedence: bulk
+List-Id: Irish Linux Users' Group <ilug.linux.ie>
+X-Beenthere: ilug@linux.ie
+
+On Sun, Jul 21, 2002 at 01:47:39AM +0100, Paul Jakma wrote:
+> isnt this standard behaviour?? mv uses rename() which replaces the
+> new path name:
+
+why, yes.  yes it is.  i think that was my point.
+
+> yes it does. :)
+> 
+> but your super-links dont is what you're saying i guess. but why? why
+> would you want a symlink, bar, linking to foo, to stop linking if foo
+> is changed?
+
+uh, i wouldn't.  i was referring to the previous message which discussed
+the idea of a symlink that referred to a 64 bit device id and the inode
+of the file.  i gave two examples of why it wouldn't work.
+
+> >     % ln -ss foo bar
+> >     % ls -i foo
+> >     111 foo
+> >     % rm foo
+> >     % touch floyd
+> >     % ls -i floyd
+> >     111 floyd
+> is this an example of inode reuse? :) or do you mean that somehow 
+> floyd is the new foo, (foo is dead, all hail floyd) and that bar now 
+> points to floyd?
+
+yes.  i did fail to mention that floyd might not use inode 111, but
+it might.  and that was my point, having these mythical symlinks point
+to the device+inode is not simple.  just like the unrm thing, it might
+be possible, but hard links and soft links are the best implementations
+that have survived to date on unix.  windows shortcuts are kinda weird -
+they're really an application level thing.
+
+mac aliases seem to take the idea of unix symlinks (linking by filename)
+along with the concept of device+inode.  i don't know mac internals,
+but i seem to remember being told it tried the former first, and then
+tried the latter.  how it would deal with the 2nd example i mentioned i
+dunno - i'm not certain if the mac version of inodes would suffer from
+that (maybe the fs identifier for the file included the creation time
+or something like that).
+
+> how do i control this 'symlinks magically link to new files' feature?
+
+i think it would be difficult.  it would also fail to work in numerous
+situations.
+
+kevin
+
+-- 
+kevin@suberic.net     that a believer is happier than a skeptic is no more to
+fork()'ed on 37058400    the point than the fact that a drunken man is happier
+meatspace place: home       than a sober one. the happiness of credulity is a
+http://ie.suberic.net/~kevin   cheap & dangerous quality -- g.b. shaw
+
+-- 
+Irish Linux Users' Group: ilug@linux.ie
+http://www.linux.ie/mailman/listinfo/ilug for (un)subscription information.
+List maintainer: listmaster@linux.ie
+
+
+

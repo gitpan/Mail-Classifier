@@ -1,0 +1,7 @@
+These files each contain 50 e-mail messages, taken from the spamassassin public
+archive at http://spamassassin.org/publiccorpus/.  They are based on "spam_2"
+and "easy_ham_2".  With only 100 messages, accuracy is poor, but I've opted not
+to burden users with a larger download.
+
+Additional files available for testing at:
+http://www.hyperbolic.net/~david/perl/mail-classifier/
