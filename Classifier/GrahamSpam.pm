@@ -20,7 +20,7 @@ use Mail::Classifier;
 
 our @ISA = qw( Mail::Classifier );
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 ### Initial Documentation ###
 
@@ -211,18 +211,10 @@ numbers.
 This parsing could stand to be updated to be more intelligent, preserving 
 IP addresses, e-mail, URL's, etc.  Perhaps when I learn Parse::RecDescent.
 
-B<Note>: by default, parse should always be called (if it's called at all) as
-    
-    $self->{parsefcn}->($msg);
-
-I<parsefcn> is initialized from "$self->can('parse')" in I<init> in 
-Mail::Classifier.  Used in this fashion, I<parse> will B<not> receive
-$self as the first argument.
-
 =cut
 
 sub parse { 
-    my ($msg) = @_;
+    my ($self, $msg) = @_;
     my %tokens;
     
     # load up @lines with all lines from the message we want to use
@@ -307,7 +299,7 @@ sub learn {
     $self->{categories}{$cat} = ( $self->{categories}{$cat} || 0 ) + 1;
     $self->{cache_meta}{msg_count_current}++;
     
-    my @tokens = $self->{parsefcn}->($msg);
+    my @tokens = $self->parse($msg);
     $self->Lock('word_count');
     foreach my $word ( @tokens ) {
         my $rref = $self->{word_count}{$word};
@@ -326,7 +318,7 @@ sub unlearn {
     # may need to trigger updatepredictors()
     $self->{cache_meta}{msg_count_current}++; 
 
-    my @tokens = $self->{parsefcn}->($msg);
+    my @tokens = $self->parse($msg);
     $self->Lock('word_count');
     foreach my $word ( @tokens ) {
         my $rref = $self->{word_count}{$word};
@@ -370,7 +362,7 @@ sub score {
         if ($self->{options}{debug} >= 10);
     
     my $href = $self->{word_score};
-    my @tokens = $self->{parsefcn}->($msg);
+    my @tokens = $self->parse($msg);
     my %predictors=();
     my %significance=();
     my @interesting_words=();
@@ -476,13 +468,20 @@ sub updatepredictors {
     $self->{cache_meta}{msg_count_scored} = $self->{cache_meta}{msg_count_current};
     my $min = $self->{options}{minimum_word_prob};
     my $max = $self->{options}{maximum_word_prob};
+	
+	# Cache biases
+	my %biascache;
+	foreach my $cat (keys %{$self->{categories}} ) {
+		$biascache{$cat} = $self->bias($cat);
+	}
+	
     while ( my ( $word, $rref ) = each ( %{$self->{word_count}} )) {
         my %ratios = ();
         my $ratio_sum = 0;
         my $n_obs = 0;
         for my $cat ( keys %{$rref} ) {
             $ratios{$cat} =  $rref->{$cat} / $self->{categories}{$cat} * 
-                            $self->bias($cat);
+                            $biascache{$cat};
             $ratio_sum += $ratios{$cat};
             $n_obs += $rref->{$cat};
         }
@@ -505,7 +504,7 @@ sub updatepredictors {
 I<prediction> takes an array of token probabilities and returns the collective prediction
 based on all of them taken together
 
-Overall probability based on N tokens comes from:
+Overall probability based on N tokens comes from Graham:
 
     prob(bad) = 
                           p(w1|b)*p(w2|b)*...*p(wN|b)
@@ -548,7 +547,7 @@ David Golden, E<lt>david@hyperbolic.netE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2002 by David Golden
+Copyright 2002 and 2003 by David Golden
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 

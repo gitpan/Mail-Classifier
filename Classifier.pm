@@ -13,8 +13,9 @@ use Mail::Box::Manager;
 use Mail::Address;
 use File::Temp;
 use File::Spec;
+use Storable qw(lock_nstore lock_retrieve);
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 ### Initial Documentation ###
 
@@ -71,17 +72,20 @@ based on the article "A Plan For Spam" by Paul Graham
 (http://www.paulgraham.com/spam.html), and is a fully-functional spam
 filter.  See the RESULTS section, below.
 
-One of the key benefits of Mail::Classifier is built-in support for
-cross-validation.  Cross-validation divides training data into "N" folds
-and iteratively scores each fold based on a model built on all remaining
-folds to maximize available data used in model evaluation. [See "An
-Introduction to the Bootstrap" by Efron and Tibshirani (1998), p. 239.
-for more details.]  The result is an out-of-sample evaluation of the
-performance (i.e. accuracy) of the classification engine which can
-operate on smaller training sets without explicit hold-out samples
-for validation.
-
-Mail::Classifier is not an efficient approach to high-volume
+One of the key benefits of Mail::Classifier is built-in support for generating
+classification matrices, both in the standard approach of a test sample and a
+holdout sample, or, more powerfully, through cross-validation.
+Cross-validation divides training data into "N" folds and iteratively scores
+each fold based on a model built on all remaining folds to maximize available
+data used in model evaluation. [See "An Introduction to the Bootstrap" by Efron
+and Tibshirani (1998), p. 239.  for more details.]  The result is an
+out-of-sample evaluation of the performance (i.e. accuracy) of the
+classification engine which can operate on smaller training sets without
+explicit hold-out samples for validation.  This is often preferable for use in
+development as it validates the algorithm and parameter tuning setting 
+used without requiring a manipulation of separate hold-out samples.
+	
+Mail::Classifier is not (yet) an efficient approach to high-volume
 classification.  (It's in Perl, not C.)  However, it is ideal for rapid
 experimentation and testing of classification algorithms, and benefits
 from Perl Regexp capabilities for exploring alternative message
@@ -167,8 +171,6 @@ class.  This should include creating data tables with I<_add_data_table>.
 
 sub init {
     my ($self, $opts) = @_;
-    # Set up parsing function 
-    $self->{parsefcn} = $self->can('parse') ;    
     # Set up basic class members
     $self->_add_data_table('options');
     $self->_add_data_table('filenames');
@@ -212,14 +214,6 @@ class extensions should place parsing.
 
     $bb->parse($msg);
 
-B<Note>: parse should always be called (if it's called at all) as
-    
-    &{$self->{parsefcn}}
-
-I<parsefcn> is initialized from "$self->can('parse')" in I<init> in 
-Mail::Classifier.  Used in this fashion, I<parse> will B<not> receive
-$self as the first argument.
-
 =cut
 
 sub parse { 1; }
@@ -247,7 +241,7 @@ sub learn {
     
     # A real function might do something here to parse out the message
     # using a function call like
-    #             my @tokens = &$self->{parsefcn} $msg;
+    #             my @tokens = $self->parse($msg);
     # to get tokens and then process them
 }
 
@@ -281,10 +275,12 @@ sub score {
 =head1 METHODS THAT (PROBABLY) DON'T NEED EXTENSION IN COMMON SUBCLASSES
 
     * train/retrain
-    * crossval
-    * tag/classify
+	* classify
+	* crossval
+    * tagmsg
+	* tagmbox
     * save
-    * setparse
+    * setparse  -- DEPRECATED
     * setconfig
     * saveconfig
     * loadconfig
@@ -332,6 +328,79 @@ sub retrain {
     $self->train($href);
 }
 
+=item I<classify> OPTIONS
+                             
+    OPTIONS =   {   threshold'   =>  .9,
+                    'corpus_list' =>  {   'spam.mbox' => 'SPAM',
+                                        'nonspam.mbox' => 'NONSPAM }
+                }
+                
+Takes a a probability threshold, plus a hash reference to
+categories and training corpi filenames.  To be counted a message as being scored into a category, the highest 
+probability category returned from I<score> must exceed the threshold or else the message 
+is scored as the reserved category 'UNK' for unknown.
+
+I<classify> does B<not> destroy prior training -- it merely creates a
+classification matrix for a given set of data using the existing 
+probabilities.
+
+    %xval = $bb->classify(  {   'threshold' => .9, 
+                                'corpus_list' => 
+                                    {   'spam.mbox' => 'SPAM',
+                                        'nonspam.mbox' => 'NONSPAM } } );
+    
+=cut 
+
+sub classify {
+    my ( $self, $opts) = @_;
+    my %mboxes = ();
+    my %mresults = ();
+
+    confess("Threshold must be [0,1].") 
+        if ( ($opts->{threshold} > 1) || ($opts->{threshold} < 0) ); 
+
+    my $mgr = Mail::Box::Manager->new;
+    $mgr->defaultTrace('NONE') unless $self->{options}{debug};
+
+    # prep mailboxes and prep the results array
+    my %temp;
+    foreach my $cat (values %{$opts->{corpus_list}}) {
+    	confess("Can't accept reserved category 'UNK'.") 
+        	if $cat eq "UNK";
+        $temp{$cat}=1;
+    }
+    while ( my ($file, $cat) = each %{$opts->{corpus_list}} ) {    
+        $mboxes{$file} = $mgr->open($file);
+        confess "Can't open mailbox '$file': $!" unless defined $mboxes{$file};
+        if ($self->{options}{debug}) {
+            my $msg_count = $mboxes{$file}->messages();
+            printf "%d messages in mailbox %s\n", $msg_count, $file;
+        }
+        $mresults{$cat} = {};
+        $mresults{$cat}{UNK} = 0;
+        foreach my $key ( keys %temp ) {
+            $mresults{$cat}{$key} = 0;
+        }
+    }
+    
+	while ( my ($file,$cat) = each %{$opts->{corpus_list}} ) {
+		print "Scoring mailbox $file\n" if ($self->{options}{debug} >= 1);
+		foreach my $msg ($mboxes{$file}->messages){
+			next unless $self->isvalid($msg);
+			print "Xval: " . $msg->subject() . "\n" if ($self->{options}{debug} >= 5); 
+			my ($rv, $p) = $self->score($msg);
+			if ( $p >= $opts->{threshold}) {
+				$mresults{$cat}{$rv} += 1;
+			} else {
+				$mresults{$cat}{UNK} += 1;
+			}
+			printf("\tResult: %s,%.2f\n", $rv, $p) if ($self->{options}{debug} >= 5);
+		}
+	}
+    $mgr->closeAllFolders;
+    return %mresults;
+}
+                
 =item I<crossval> OPTIONS
                              
     OPTIONS =   {   'folds'       =>  4,
@@ -347,7 +416,10 @@ probability category returned from I<score> must exceed the threshold or else th
 is scored as the reserved category 'UNK' for unknown.
 
 I<crossval> destroys prior training -- users should consider cloning and then cross-validating if 
-they do not want to lose prior training.
+they do not want to lose prior training.  Because of this, cross-validation
+is a good test of a specific implementation of an algorithm and option 
+settings.  To test the validity of the model trained on a particular data
+set on a new data set, use I<classify> instead.
 
     %xval = $bb->crossval(  {   'folds' => 4, 'threshold' => .9, 
                                 'corpus_list' => 
@@ -364,8 +436,6 @@ sub crossval {
 
     confess("Can't crossval with less than 2 folds.") 
         if ($opts->{folds} < 2);
-    confess("Can't accept reserved category 'UNK'.") 
-        if exists $opts->{corpus_list}{UNK};
     confess("Threshold must be [0,1].") 
         if ( ($opts->{threshold} > 1) || ($opts->{threshold} < 0) ); 
 
@@ -376,16 +446,18 @@ sub crossval {
     # and prep the results array
     my %temp;
     foreach my $cat (values %{$opts->{corpus_list}}) {
+    	confess("Can't accept reserved category 'UNK'.") 
+        	if $cat eq "UNK";
         $temp{$cat}=1;
     }
     while ( my ($file, $cat) = each %{$opts->{corpus_list}} ) {    
-        $mboxes{$cat} = $mgr->open($file);
-        confess "Can't open mailbox '$file': $!" unless defined $mboxes{$cat};
+        $mboxes{$file} = $mgr->open($file);
+        confess "Can't open mailbox '$file': $!" unless defined $mboxes{$file};
         if ($self->{options}{debug}) {
-            my $msg_count = $mboxes{$cat}->messages();
+            my $msg_count = $mboxes{$file}->messages();
             printf "%d messages in mailbox %s\n", $msg_count, $file;
         }
-        foreach my $msg ($mboxes{$cat}->messages){
+        foreach my $msg ($mboxes{$file}->messages){
             $mtags{$msg} = int(rand($opts->{folds}));
         }
         $mresults{$cat} = {};
@@ -403,7 +475,7 @@ sub crossval {
         print "Training without fold @{[$i+1]}\n" if ($self->{options}{debug} >= 1);
         $self->forget;
         while ( my ($file,$cat) = each %{$opts->{corpus_list}} ) {
-            foreach my $msg ($mboxes{$cat}->messages){
+            foreach my $msg ($mboxes{$file}->messages){
                 next if ($mtags{$msg} == $i);
                 next unless $self->isvalid($msg);
                 print "Learning: " . $msg->subject() . "\n" if ($self->{options}{debug} >= 5); 
@@ -413,7 +485,7 @@ sub crossval {
         # next, score $i
         print "Scoring fold @{[$i+1]}\n" if ($self->{options}{debug} >= 1);
         while ( my ($file,$cat) = each %{$opts->{corpus_list}} ) {
-            foreach my $msg ($mboxes{$cat}->messages){
+            foreach my $msg ($mboxes{$file}->messages){
                 next if ($mtags{$msg} != $i);
                 next unless $self->isvalid($msg);
                 print "Xval: " . $msg->subject() . "\n" if ($self->{options}{debug} >= 5); 
@@ -482,9 +554,7 @@ sub tagmbox {
  
 =item I<save> FILENAME
 
-Dump the entire classifier to a file, given by FILENAME.  If FILENAME
-exists, it will be overwritten.  FILENAME will contain a MLDBM::Sync::SDBM_File
-database representing the classifier object's data.
+Dump the entire classifier to a Perl Storable file, given by FILENAME.  
 
     $bb->save("/tmp/saved-classifier");
     
@@ -494,33 +564,17 @@ sub save {
     my ($self, $filename) = @_;
     # Lock all the data tables to ensure a clean copy
     $self->LockAll;
-    my $href;
-    tie %{$href},'MLDBM::Sync', $filename, O_RDWR|O_CREAT, 0640
-        or confess "Can't create datafile '$filename': $!";
-    %{$href} = ();
-    foreach my $item ( keys %{$self} ) {
-        next if $item eq 'parsefcn';     # Don't store subs!
-        $href->{$item} = { %{$self->{$item}} };
-    }
-    untie %{$href};
-    $self->UnLockAll;
+    lock_nstore($self,$filename);
+	$self->UnLockAll;
 }
 
 =item I<setparse> FUNCTION-REFERENCE    
-    
-Sets the function used to parse messages.  Allows an external function to parse -- 
-taking a message and return a list of tokens.  Typically, subclasses will 
-override the default parser, but this utility function allow someone to try
-variations on parsing techniques without creating a whole new class for it.
 
-    $bb->setparse( \&custom-parser() );
+B<DEPRECATED>: Used to optionally set an external function for parsing.
+Now, use of a separate parser should be done by subclassing and overriding
+the parsing function.
 
 =cut
-
-sub setparse {
-    my $self = shift;
-    $self->{parsefcn} = shift;
-}
 
 =item I<saveconfig> FILENAME
 
@@ -651,24 +705,29 @@ sub _add_data_table {
 
 =item I<_load_from_file> FILENAME
 
-Load the classifier from a file, returns a new classifier object with the right data.
-Internal function called from new.
+Load the classifier from a file, overwriting $self.  Internal function called
+from new.
 
-    $newobj = $bb->_load_from_filename('/tmp/saved-classifier');
+    $self->_load_from_filename('/tmp/saved-classifier');
 
 =cut
 
 sub _load_from_file {
     my ($self, $filename) = @_;
-    my $href = {};
-    my $tieref = tie %{$href},'MLDBM::Sync', $filename, O_RDWR|O_CREAT, 0640
-        or confess "Can't tie datafile $filename: $!";
-    $tieref->ReadLock;
-    my $newobj = $self->_clone($href);
-    $tieref->UnLock;
-    undef $tieref;
-    untie %{$href};
-    return $newobj;
+    $self = lock_retrieve($filename);
+    # Now figure out which tables are supposed to be cached and cache them
+	# while storing new scratch filenames into a fresh hash 
+	my $cachedfiles = $self->{filenames};
+    delete $self->{filenames};
+	$self->_add_data_table('filenames');
+    foreach my $key ( keys %{$self} ) {
+        next unless exists($cachedfiles->{$key});
+		my (undef, $fn) = File::Temp::tempfile();
+		tie %{$self->{$key}},'MLDBM::Sync', $fn, O_RDWR|O_CREAT, 0640
+			or confess "Can't tie datafile $key: $!";
+		$self->{filenames}{$key} = $fn;
+    }
+	return $self;
 }
 
 =item I<_clone> OBJECT
@@ -685,13 +744,12 @@ sub _clone {
     my $newobj = {};
     bless($newobj, ref($self) || $self);
     foreach my $key ( keys %{$href} ) {
-        next if ( $key eq 'filenames' or $key eq 'parsefcn');
+        next if $key eq 'filenames';  # don't clone the filenames entry 
         $newobj->_add_data_table($key, exists($href->{filenames}{$key}) );
         $newobj->Lock($key);
         $newobj->{$key} = { %{$href->{$key}} };
         $newobj->UnLock($key);
     }
-    $newobj->setparse ( \&{$newobj->parse} );
     return $newobj;
 }
 
@@ -808,7 +866,7 @@ David Golden, E<lt>david@hyperbolic.netE<gt>
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2002 by David Golden
+Copyright 2002 and 2003 by David Golden
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself. 

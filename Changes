@@ -3,11 +3,34 @@ Changes to Mail::Classifier
 ========================================
 Revision history for Perl extension Mail::Classifier.
 
+0.11	Tue Apr 22 06:52:27 EDT 2003
+
+	-	deprecated setparse() and replaced $self->{parsefcn} crud
+		with a simple member function "parse" that can be subclassed 
+		as needed. This simplified a lot of crud elsewhere.
+
+	-	created a "classify" function to make classification tables
+		on an existing, trained Classifier (avoiding destructive
+		validation in "crossvalidate")
+
+	-	tore out and replaced save/load functionality from scratch
+		to use Storable to a single file rather than dumping it to
+		a set of MLDBM files (seems to have improved size/speed of 
+		resulting saved files, too)
+
+	-	new save/load subsystem also fixes bugs loading saved Classifier 
+		objects (thanks to Brad Davis for finding this bug in the first place)
+
+	-	added a very rudimentary procmail-based spam filter called
+		"spamometer" in the examples directory
+	
 0.10    Tue Jan 14 12:19:05 EST 2003
+
     -   completely rewritten from first attempts; first real "alpha"
         version of Mail::Classifier, Mail::Classifier::Trivial, 
         and Mail::Classifier::GrahamSpam 
 
 0.01    Thu Sep 19 00:46:59 EST 2002
+
     -   original testing version 
 

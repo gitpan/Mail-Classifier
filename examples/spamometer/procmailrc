@@ -1,0 +1,3 @@
+# send mail through filter
+:0fw
+	| /home/david/tag-message.pl /home/david/myfilter.out 

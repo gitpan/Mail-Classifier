@@ -1,0 +1,23 @@
+SPAMOMETER README
+
+This is a rudimentary spam filter for linux systems running procmail.
+
+Step 1. Run new-spamometer.pl with an output filename as a parameter
+
+	new-spamometer.pl myfilter.out
+
+Step 2. Train with train-spamometer.pl.  Arguments are the input filter
+filename, the category, and a corpus filename
+
+	train-spamometer.pl myfilter.out HAM goodcorpus.mbox
+	train-spamometer.pl myfilter.out SPAM badcorpus.mbox
+
+Step 3. Edit procmailrc to reflect the location of tag-message.pl and
+myfilter.out.  tag-message.pl takes the filter filename as input and reads
+a message from procmail on standard input.  tag-message.pl adds a new
+header "X-Mail-Classifier:" to your message with the best category 
+determination.  (I.e HAM or SPAM).
+
+Step 4. Copy (or add) procmailrc to your .procmailrc file.  Test and see if
+it's working.
+

@@ -12,6 +12,7 @@ WriteMakefile(
                                 File::Copy => 0,
                                 Mail::Box => 0,
                                 Mail::Address => 0,
+								Storable => 0,
                                 File::Temp => 0,
                                 File::Spec => 0     },
     ($] >= 5.005 ?    ## Add these new keywords supported since 5.005

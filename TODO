@@ -1,29 +1,18 @@
 =============================
 TODO    Mail::Classifier
-VERSION 0.10
+VERSION 0.11
 =============================
 
 CPAN/Module Maintenance
 
 *   Write better test modules for CPAN packaging
 
-Functionality Enhancements
+*	Add real module version requirements to Makefile.PL
 
-*   Add functionality to Classifier/GS to allow external
-    replacement of the word-prob-score
-    and combined-predictors-probability functions similar to parse
+Functionality Enhancements
 
 *   Allow learn/score to take \@array and construct a Mail::Message on
     the fly
-
-*   Add functionality to return a classification matrix for new sample
-    data using an existing training set -- i.e. not cross-validating the
-    new sample data.  (Tests the training set, not the algorithm/parameters.)
-
-*   More broadly, I need a "score_all" function (that works either on a 
-    list of mailboxes or a reference to an array of messages) which will
-    return the number of messages in each category.  This function then can
-    drive cross_validate and an out-of-sample-test function. (Evaluate? Classify?)
 
 Optimization/Efficiency
 
@@ -35,6 +24,14 @@ Optimization/Efficiency
 *   Experiment with alternative storage mechanisms and formats (array of arrays),
     separate files/tables for each category, etc. in GrahamSpam
 
+*	More experimentally: consider re-writing to use plug-in classes for different types of
+	data storage, allowing transparent replacement of memory/flat file/DB storage options.
+
+Utility
+
+*   Write an example program that can be used with procmail to filter
+    or tag e-mail
+
 Algorithm Tuning/Benchmarking
 
 *   Test Graham's default cut-offs and biases vs alternatives
@@ -44,8 +41,7 @@ Algorithm Tuning/Benchmarking
 *   Test results of higher threshold for n_observations_required (increased
     confidence, reduced size of word_score, but slower to flag new spams...)
 
-Utility
+*	Test Robinson's (?) enhancements to Graham's algorithm
 
-*   Write an example program that can be used with procmail to filter
-    or tag e-mail
+*	Test bi-grams versus uni-gram tokens.
 
